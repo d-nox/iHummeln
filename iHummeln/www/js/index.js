@@ -20,13 +20,23 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        $.support.cors = true;
+        $.mobile.phonegapNavigationEnabled = true;
+        $.mobile.allowCrossDomainPages = true;
+        $.mobile.ajaxEnabled = false;
+        $.mobile.linkBindingEnabled = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+//        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', function() {
+            StatusBar.overlaysWebView(false);
+        }, false);
     },
     // deviceready Event Handler
     //
@@ -34,6 +44,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

@@ -46,17 +46,15 @@ body {
 }
 
 .app{
-    background:url(../icon.png) no-repeat;
-    background-position: center 50px;
     text-align:center;
-    padding: 230px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     margin: 20px 0px 0px 0px;
 }
 
 h1 {
     font-size:24px;
     font-weight:normal;
-    margin:0px;
+    margin 0;
     overflow:visible;
     padding:0px;
     text-align:center;
@@ -99,7 +97,6 @@ h1 {
 }
 
 #navigationbar{
-    opacity: 0.90;
     position: fixed;
     width: 100%;
 }
