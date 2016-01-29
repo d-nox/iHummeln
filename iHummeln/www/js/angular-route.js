@@ -989,8 +989,4 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 }
 
 
-<<<<<<< HEAD
 })(window, window.angular);
-=======
-})(window, window.angular);
->>>>>>> iHummeln/master
