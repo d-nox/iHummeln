@@ -19,12 +19,20 @@ iHummelnApp.config(function ($routeProvider) {
             templateUrl: 'pages/funktionsweiseDerBestimmungsApp.html',
             controller: 'FunktionsweiseController'
         })
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> iHummeln/master
     .when('/HummelKopf?=', {
         templateUrl: 'pages/HummelBestimmen/neueHummelBestimmen2.html',
         controller: 'HummelKopfController'
     })
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> iHummeln/master
     .when('/AllgemeinesUeberHummeln', {
         templateUrl: 'pages/allgemeinesUeberHummeln.html',
         controller: 'AllgemeinesController'
@@ -53,4 +61,8 @@ iHummelnApp.controller('HummelKopfController', function ($scope) {
 iHummelnApp.controller('AllgemeinesController', function ($scope) {
     $scope.PageTitle = 'Allgemeines über Hummeln';
     $scope.Message = "this is the AllgemeinesController";
+<<<<<<< HEAD
 });;
+=======
+});;
+>>>>>>> iHummeln/master

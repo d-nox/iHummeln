@@ -9207,4 +9207,8 @@ if ( typeof noGlobal === strundefined ) {
 
 return jQuery;
 
+<<<<<<< HEAD
 }));
+=======
+}));
+>>>>>>> iHummeln/master
