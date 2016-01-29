@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------------------------------------------------------------------------App
+//----------------------------------------------------------------------------------------------------------------------------------------App
 var iHummelnApp = angular.module('iHummelnApp', ['ngRoute']);
-//---------------------------------------------------------------------------------------------------------------------------------------Routes
+//-------------------------------------------------------------------------------------------------------------------------------------Routes
 
 iHummelnApp.config(function ($routeProvider) {
     $routeProvider
@@ -19,26 +19,18 @@ iHummelnApp.config(function ($routeProvider) {
             templateUrl: 'pages/funktionsweiseDerBestimmungsApp.html',
             controller: 'FunktionsweiseController'
         })
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> iHummeln/master
     .when('/HummelKopf?=', {
         templateUrl: 'pages/HummelBestimmen/neueHummelBestimmen2.html',
         controller: 'HummelKopfController'
     })
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> iHummeln/master
     .when('/AllgemeinesUeberHummeln', {
         templateUrl: 'pages/allgemeinesUeberHummeln.html',
         controller: 'AllgemeinesController'
     });
 });
-//-----------------------------------------------------------------------------------------------------------------------------------Controller
+//---------------------------------------------------------------------------------------------------------------------------------Controller
 iHummelnApp.controller('mainController', function ($scope) {
     $scope.PageTitle = 'iHummeln';
     $scope.Message = "this is the mainController";
@@ -61,8 +53,4 @@ iHummelnApp.controller('HummelKopfController', function ($scope) {
 iHummelnApp.controller('AllgemeinesController', function ($scope) {
     $scope.PageTitle = 'Allgemeines über Hummeln';
     $scope.Message = "this is the AllgemeinesController";
-<<<<<<< HEAD
 });;
-=======
-});;
->>>>>>> iHummeln/master
