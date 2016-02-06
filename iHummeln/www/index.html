@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="iHummelnApp">
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -19,12 +19,14 @@
     <title>{{PageTitle}}</title>
 </head>
 
-<body ng-controller="mainController">
-    <div data-role="page">
-        <div id="navigationbar" data-role="header" data-add-back-btn="true">
-            <h1>{{PageTitle}}</h1>
+<body ng-app="iHummelnApp">
+    <div data-role="page" ng-controller="mainController" data-theme="a">
+        <div id="navigationbar" data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück">
+            <h1 ng-bind="PageTitle">{{PageTitle}}</h1>
         </div>
-        <div class="app" ng-view></div>
+        <div data-role="content">
+            <div id="mainContent" class="app" ng-view></div>
+        </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
