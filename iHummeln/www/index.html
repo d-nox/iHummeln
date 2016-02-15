@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="iHummelnApp">
 
 <head>
     <meta charset="utf-8" />
@@ -7,11 +7,10 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <script src="js/jQuery.js"></script>
-    <script src="js/angular.js"></script>
-    <script src="js/angular-route.js"></script>
-
     <script src="js/index.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
     <script src="js/ihummeln.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/hummel.css" />
@@ -20,9 +19,9 @@
     <title>{{PageTitle}}</title>
 </head>
 
-<body ng-app="iHummelnApp">
-    <div data-role="page" ng-controller="mainController" data-theme="a">
-        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück">
+<body ng-controller="mainController">
+    <div data-role="page" data-theme="b" id="index">
+        <div data-role="header" data-add-back-btn="true">
             <h1 ng-bind="PageTitle">{{PageTitle}}</h1>
         </div>
         <div data-role="content">
