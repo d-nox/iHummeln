@@ -15,24 +15,14 @@ iHummelnApp.config(function ($routeProvider) {
         controller: 'NeueHummelBestimmenController'
     })
 
+    .when('NeueHummelBestimmen/:bestimmId', {
+        templateUrl: 'pages/HummelnBestimmen/bestimmen{{bestimmId}}.html',
+        controller: 'NeueHummelBestimmenController'
+    })
+
     .when('/FunktionsweiseDerApp', {
         templateUrl: 'pages/funktionsweiseDerBestimmungsApp.html',
         controller: 'FunktionsweiseController'
-    })
-
-    .when('/NeueHummelBestimmen/Hintertibia', {
-        templateUrl: 'pages/HummelBestimmen/hintertibia.html',
-        controller: 'HintertibiaController'
-    })
-
-    .when('/NeueHummelBestimmen/Kopf', {
-        templateUrl: 'pages/HummelBestimmen/kopf.html',
-        controller: 'HummelKopfController'
-    })
-
-    .when('/HummelKopf?=', {
-        templateUrl: 'pages/HummelBestimmen/neueHummelBestimmen2.html',
-        controller: 'HummelKopfController'
     })
 
     .when('/AllgemeinesUeberHummeln', {
@@ -59,18 +49,8 @@ iHummelnApp.controller('FunktionsweiseController', function ($scope) {
     $('#mainContent').trigger('create');
 });
 
-iHummelnApp.controller('HummelKopfController', function ($scope) {
-    $scope.selectedHead = $scope.$id;
-    $('#mainContent').trigger('create');
-})
-
-iHummelnApp.controller('HintertibiaController', function ($scope) {
-    $scope.selectedHintertibiaController = $scope.$id;
-    $('#mainContent').trigger('create');
-})
-
 iHummelnApp.controller('AllgemeinesController', function ($scope) {
     $scope.PageTitle = 'Allgemeines über Hummeln';
     $scope.Message = "this is the AllgemeinesController";
     $('#mainContent').trigger('create');
-});;
+});
