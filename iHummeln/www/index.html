@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="iHummelnApp">
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -9,23 +9,29 @@
     <script src="js/jQuery.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
+<!--
     <script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/ihummeln.js"></script>
+-->
 
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/hummel.css" />
     <link rel="stylesheet" type="text/css" href="css/jQueryMobile/jquery.mobile-1.4.5.css" />
-
-    <title>{{PageTitle}}</title>
 </head>
 
-<body ng-controller="mainController">
-    <div data-role="page" data-theme="b" id="index">
-        <div data-role="header" data-add-back-btn="true">
-            <h1 ng-bind="PageTitle">{{PageTitle}}</h1>
+<body>
+    <div data-role="page" id="index" class="app-icon">
+        <div data-role="header">
+            <h1>iHummeln</h1>
         </div>
-        <div data-role="content">
-            <div id="mainContent" class="app" ng-view></div>
+        <div data-role="content" class="app">
+            <ul data-role="listview">
+                <li><a href="#NeueHummelBestimmen">Neue Hummel bestimmen</a></li>
+                <li><a href="#">Identifizerte Hummeln</a></li>
+                <li><a href="#AllgemeinesUeberHummeln">Allgemeines über Hummeln</a></li>
+                <li><a href="#FunktionsweiseDerApp">Funktionsweise der Bestimmungapp</a></li>
+            </ul>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
@@ -35,3 +41,284 @@
 </body>
 
 </html>
+
+<!--Neue Hummel identifizieren-->
+<div data-role="page" id="NeueHummelBestimmen">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Zurück">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-split-icon="info">
+            <li>
+                <a href="#NeueHummelBestimmen2">
+                    <!--           <img src="images/hummel/hummelModel/hintertibia.png" />-->
+                    <h3>Hintertibia mit Corbicula</h3>
+                    <p>Metasoma weist sechs sichtbare Terga auf, wobei T6 spitz endet. Gestalt generell gedrungen. Antennen bestehen aus 12 Gliedern.</p>
+                    <p><b>Arbeiterinnen und Königinnen</b></p>
+                </a>
+                <a href="#popup" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+            <li>
+                <a href="#NeueHummelBestimmen3">
+                    <h3>Hintertibia ohne Corbicula</h3>
+                    <p>Metasoma weist sechs oder sieben sichtbare Terga auf. Gestalt gedrungen oder schlank. Antennen bestehen aus 12 oder 13 Gliedern.</p>
+                </a>
+                <a href="" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Neue Hummel bestimmen 2-->
+<div data-role="page" id="NeueHummelBestimmen2">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#NeueHummelBestimmenA">
+                    <img src="images/hummel/koepfe/kopf1.png" height="100px" />
+                    <h3>Clypeus</h3>
+                    <p>hell behaart</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/hummel/koepfe/kopf2.png" height="100px" />
+                    <h3>Clypeus</h3>
+                    <p>schwarz behaart.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Neue Hummel bestimmen 3-->
+<div data-role="page" id="NeueHummelBestimmen3">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#">
+                    <p>
+                        Metasoma weist sechs sichtbare Terga auf, wobei T6 spitz endet. Sternum 6 mit mehr oder weniger stark ausgeprägten Leisten. Cuticula scheint durch Behaa- rung durch. Gestalt gedrungen. Antennen bestehen aus 12 Gliedern. Clypeus schwarz behaart.
+                    </p>
+                    <p>
+                        <b>
+                    Kuckuckshummel-Königinnen
+                </b>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>
+                        Metasoma weist sieben sichtbare Terga auf, wobei T7 am Ende abgerundet ist. Gestalt schlank. Antennen bestehen aus 13 Gliedern. Clypeus gelb, braun oder schwarz behaart.
+                    </p>
+                    <p>
+                        <b>
+                Drohnen
+            </b>
+                    </p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<!--Schlüssel A1-->
+<div data-role="page" id="NeueHummelBestimmenA">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#ArtentabelleA8">
+                    <img src="" height="100px" />
+                    <h3>Metasoma</h3>
+                    <p>T4 und T5 weiß behaart.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#NeueHummelBestimmenA2">
+                    <img src="" height="100px" />
+                    <h3>Metasoma</h3>
+                    <p>T4 und T5 gelb bis braun behaart.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#ArtentabelleA4">
+                    <img src="" height="100px" />
+                    <h3>Metasoma</h3>
+                    <p>T4 und T5 orange behaart.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Schlüssel A2-->
+<div data-role="page" id="NeueHummelBestimmenA2">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#NeueHummelBestimmenA3">
+                    <img src="" height="100px" />
+                    <p>Metasoma stroh- bis dunkelgelb, bei manchen Arten mit schwarzen Haaren durchmischt.</p>
+                    <p>Mesoma gelb mit schwarzem Interalarband oder Mittelfleck.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#ArtentabelleA7">
+                    <img src="" height="100px" />
+                    <p>Metasoma bräunlich, in unterschiedlichem Maße mit schwarzen und/oder gelben Binden oder Übergängen.</p>
+                    <p>Mesosoma braun oder schwarz (bei B. humilis kann das schwarze Mesosoma schmal von gelben Haaren umgeben sein!)</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Schlüssel A3-->
+<div data-role="page" id="NeueHummelBestimmenA3">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#ArtentabelleA5">
+                    <img src="" height="100px" />
+                    <p>Metasoma gelb, nur T6 mit schwarzen Haaren.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#ArtentabelleA6">
+                    <img src="" height="100px" />
+                    <p>Metasoma gelb, neben T6 noch andere Terga mit schwarzen Haaren.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Artentabelle A4-->
+<div data-role="page" id="ArtentabelleA4">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Artentabelle</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#">
+                    <h3>Waldhummel - Bombus sylvarum</h3>
+                    <p>Orange Behaarung des Metasomas ab dem Beginn von T4. T2 bis T5 am Hinterrand strohgelb behaart. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Auffällig hoher Flugton. A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestände.]</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Trughummel - Bombus mendax</h3>
+                    <p>Orange Behaarung des Metasomas ab dem Hinterrand von T3. Gelbe Binden des Mesosomas oft sehr schwach entwickelt bis fast fehlend. Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied fast so lange, wie die drei folgenden Glieder zusammen (Abb. 12). A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Bombus inexspectatus</h3>
+                    <p>Orange Behaarung des Metasomas ab dem Vorderrand von T4. Terga ohne helle Hinterränder. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Obligater Brutparasit an B. ruderarius, daher gibt es keine Arbeiterinnen. A (Süden), CH; selten [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Default-->
+<div data-role="page" id="default">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Neue Hummel identifizieren</h1>
+    </div>
+    <div data-role="content">
+
+    </div>
+</div>
+
+<!--Allgemeines über Hummeln-->
+<div data-role="page" id="AllgemeinesUeberHummeln">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Allgemeines über Hummeln</h1>
+    </div>
+    <div data-role="content">
+        <style type="text/css">
+            .klein {
+                text-transform: none;
+                text-align: justify;
+                padding: 0px 30px 20px 20px;
+                font-family: 'Avenir';
+                font-size: 120%;
+            }
+        </style>
+        <div>
+            <h2>Bestimmen der Gattung Bombus</h2>
+            <p class="klein">
+                Hummeln lassen sich durch ihren typischen Habitus „intuitiv“ von anderen Bienen unter- scheiden. Es gibt jedoch einige Bienen, die bei oberflächlicher Betrachtung für Hummeln gehalten werden können bzw. Hummeln, die eventuell nicht als solche erkannt werden.
+            </p>
+            <p class="klein">
+                Traditionell werden die verschiedenen Bienengattungen unter anderem anhand der Aus- bildung der Flügeladerung am Vorderflügel, und der durch diese gebildeten Zellen un- terschieden. Der Vorderflügel von Hummeln zeichnet sich durch drei Cubitalzellen aus, die etwa gleich groß sind, wobei die Radialzelle im ersten Drittel am breitesten ist und sich gegen das Flügelende hin verengt (Abb. 3). Durch die drei fast auf einer Linie lie- genden Ocelli am Kopf (Abb. 1, 2), lassen sich Hummeln von anderen Gattungen mit ähnlicher Flügeladerung zweifelsfrei unterscheiden. Hier sind vor allem die Pelzbienen (Anthophora) zu erwähnen, deren Habitus stark an den von Hummeln erinnert. Der Vor- derflügel trägt ebenfalls drei in etwa gleich große Cubitalzellen, die Radialzelle ist jedoch im hinteren Drittel am breitesten und gegen das Flügelende hin abgerundet; die Ocelli bil- den ein Dreieck. Weiters haben Pelzbienen ein sehr charakteristisches „schwebfliegenar- tiges“ Flugverhalten. Oft für Hummeln gehalten werden auch die mittelgroßen bis großen Holzbienen (Xylocopa), die stark verdunkelte Flügel und eine ausschließlich schwarze Körperbehaarung besitzen. Mitteleuropäische Hummeln sind nie rein schwarz behaart. Durch ihr mehr oder weniger orange behaartes Metasoma und ihren Habitus können die beiden Mauerbienen Osmia bicornis und O. cornuta leicht für Hummeln gehalten werden. Im Gegensatz zu Hummeln hat der Vorderflügel nur zwei Cubitalzellen und der Pollen wird in einer Bauchbürste (Scopa) gesammelt.
+            </p>
+            <p class="klein">
+                Ein im Allgemeinen gut erkennbares Merkmal ist das Vorhandensein der Corbicula (Abb. 5) auf der Tibia (Abb. 4) der Hinterbeine. Da diese Einrichtung zum Sammeln und Trans- portieren von Pollen dient, ist sie jedoch nur bei Arbeiterinnen und Königinnen vorhanden – bei Weibchen der sozialparasitären Untergattung Psithyrus (Abb. 6) und allen Drohnen (Abb. 29, 30) fehlt dieser Sammelapparat.
+            </p>
+            <div>
+                <img width="95%" height="auto" align="center" src="images/edit/01_KöperEinerArbeiterinInRückenansicht.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/02_VorderansichtEinesKopfes.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/03_linkerVorderflügel.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/04_GliederungEinesMittelbeines.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/05_linkerMittelmetatarsusInVorderansicht_nurMitKurzenHaaren.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/06_HintertibiaOhneCorbicula.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/07_rechterMittelmetatarsusInSeitenansichtOhneBehaarungGezeichnet_spitzAusgezogen.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/08_linkerMittelmetatarsusInVorderansicht.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Funktionsweise der App-->
+<div data-role="page" id="FunktionsweiseDerApp">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Funktionsweise der App</h1>
+    </div>
+    <div data-role="content">
+        <style type="text/css">
+            .klein {
+                text-transform: none;
+                text-align: justify;
+                padding: 0px 30px 20px 20px;
+                font-family: 'Avenir';
+                font-size: 120%;
+            }
+        </style>
+
+        <div>
+            <h2>Neue Hummel bestimmen</h2>
+            <img height="85%" width="auto" src="images/animation.gif">
+            <p class="klein">
+                Die Bestimmung einer neuen Hummel erfolgt über das Durchlaufen des Fragebogens. Starten Sie beim Kopf der Hummel, ... .
+            </p>
+            <h2>Identifizierte Hummeln</h2>
+            <p>!!! Hier kommt das GIF gleich !!!</p>
+            <p class="klein">Hier sehen Sie alle Hummeln, die Sie jemals mit iHummeln identifiziert haben. Um nähere Informationen und Charakteristika zu einer Hummelgattung zu erhalten, berühren Sie einfach die Hummel.</p>
+            <h2>Allgemeines über Hummeln</h2>
+            <p class="klein">Unter diesem Tab finden Sie allgemeine Informationen und Tipps bei der Bestimmung von Hummeln.</p>
+        </div>
+
+
+    </div>
+</div>

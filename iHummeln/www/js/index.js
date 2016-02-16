@@ -20,13 +20,6 @@ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
-        $.support.cors = true;
-        $.mobile.phonegapNavigationEnabled = true;
-        $.mobile.allowCrossDomainPages = true;
-        $.mobile.ajaxEnabled = false;
-        $.mobile.linkBindingEnabled = false;
-        $.mobile.hashListeningEnabled = false;
-        $.mobile.pushStateEnabled = false;
     },
     // Bind Event Listeners
     //

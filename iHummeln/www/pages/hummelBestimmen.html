@@ -1,4 +1,4 @@
-<ul data-role="listview">
+<ul data-role="listview" data-split-icon="info" data-inset="true">
     <li >
         <a href="#/NeueHummelBestimmen/2">
 <!--           <img src="images/hummel/hummelModel/hintertibia.png" />-->
@@ -6,6 +6,7 @@
             <p>Metasoma weist sechs sichtbare Terga auf, wobei T6 spitz endet. Gestalt generell gedrungen. Antennen bestehen aus 12 Gliedern.</p>
             <p><b>Arbeiterinnen und Königinnen</b></p>
         </a>
+        <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
     </li>
     <li>
         <a href="#/NeueHummelBestimmen?=3">
@@ -14,3 +15,22 @@
         </a>
     </li>
 </ul>
+<a href="popup" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">data-transition="slidedown"</a>
+
+
+<div data-role="page" id="popup" data-url="popup">
+
+	<div data-role="header" data-theme="b">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Popup</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
