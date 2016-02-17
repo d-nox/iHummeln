@@ -54,19 +54,43 @@
                 <a href="#NeueHummelBestimmen2">
                     <!--           <img src="images/hummel/hummelModel/hintertibia.png" />-->
                     <h3>Hintertibia mit Corbicula</h3>
-                    <p>Metasoma weist sechs sichtbare Terga auf, wobei T6 spitz endet. Gestalt generell gedrungen. Antennen bestehen aus 12 Gliedern.</p>
+                    <p>
+                        Metasoma weist sechs sichtbare Terga auf, wobei T6 spitz endet. Gestalt generell gedrungen. Antennen bestehen aus 12 Gliedern.
+                    </p>
                     <p><b>Arbeiterinnen und Königinnen</b></p>
                 </a>
-                <a href="#popup" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+                <a href="#hinterbiaMitCorbicula" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#NeueHummelBestimmen3">
                     <h3>Hintertibia ohne Corbicula</h3>
                     <p>Metasoma weist sechs oder sieben sichtbare Terga auf. Gestalt gedrungen oder schlank. Antennen bestehen aus 12 oder 13 Gliedern.</p>
                 </a>
-                <a href="" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+                <a href="#hinterbiaOhneCorbicula" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="hinterbiaMitCorbicula">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Hintertibia mit Corbicula</h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/5.png" />
+    </div>
+</div>
+
+<div data-role="page" id="hinterbiaOhneCorbicula">
+    <div data-role="header" data-add-back-btn="true">
+        <h1>Hintertibia ohne Corbicula</h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/6.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/29.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/30.png" />
     </div>
 </div>
 
@@ -250,13 +274,14 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/a4-1.png" width="100px" />
                     <h3>Waldhummel - Bombus sylvarum</h3>
                     <p>Orange Behaarung des Metasomas ab dem Beginn von T4. T2 bis T5 am Hinterrand strohgelb behaart. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Auffällig hoher Flugton. A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestände.]</p>
                 </a>
+                <a href="#infoA4-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -264,6 +289,7 @@
                     <h3>Trughummel - Bombus mendax</h3>
                     <p>Orange Behaarung des Metasomas ab dem Hinterrand von T3. Gelbe Binden des Mesosomas oft sehr schwach entwickelt bis fast fehlend. Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied fast so lange, wie die drei folgenden Glieder zusammen (Abb. 12). A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]</p>
                 </a>
+                <a href="#infoA4-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -271,8 +297,42 @@
                     <h3>Bombus inexspectatus</h3>
                     <p>Orange Behaarung des Metasomas ab dem Vorderrand von T4. Terga ohne helle Hinterränder. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Obligater Brutparasit an B. ruderarius, daher gibt es keine Arbeiterinnen. A (Süden), CH; selten [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
                 </a>
+                <a href="#infoA4-3" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoA4-1">
+    <div data-role="header" data-add-back-btn="true">
+        <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/7.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/11.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoA4-2">
+    <div data-role="header" data-add-back-btn="true">
+        <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/8.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/12.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoA4-3">
+    <div data-role="header" data-add-back-btn="true">
+        <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/7.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/11.png" />
     </div>
 </div>
 
@@ -382,18 +442,38 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#NeueHummelBestimmenB2">
                     <p>Hintertibia ohne Corbicula (Abb. 6). Keine Arbeiterinnen (nur große Individuen).</p>
                 </a>
+                <a href="#infoB1-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#NeueHummelBestimmenB5">
                     <p>Hintertibia mit Corbicula (Abb. 5). Königinnen und Arbeiterinnen (kleine und große Individuen).</p>
                 </a>
+                <a href="#infoB1-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoB1-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/6.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB1-2">
+    <div data-role="header" data-add-back-btn="true">
+        <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/5.png" />
     </div>
 </div>
 
@@ -460,18 +540,38 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#ArtentabelleB18">
                     <p>Spitze des Metasomas nach ventral gekrümmt (Abb. 14).</p>
                 </a>
+                <a href="#infoB4-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#ArtentabelleB15">
                     <p>Spitze des Metasomas nicht nach ventral gekrümmt (Abb. 15).</p>
                 </a>
+                <a href="#infoB4-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoB4-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/14.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB4-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/15.png" />
     </div>
 </div>
 
@@ -491,7 +591,7 @@
             <li>
                 <a href="#NeueHummelBestimmenB8">
                     <img src="images/hummel/b5-2.png" width="100px" />
-                    <p>Mesosoma schwarz mit hellen Binden bzw. gelb mit schwarzem Mittel eck.</p>
+                    <p>Mesosoma schwarz mit hellen Binden bzw. gelb mit schwarzem Mittelfleck.</p>
                 </a>
             </li>
         </ul>
@@ -641,7 +741,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
            <li>
                <p>
                    B. hortorum und B. ruderatus können im Freiland oft nicht sicher unterschieden werden.
@@ -653,6 +753,7 @@
                     <h3>Gartenhummel - Bombus hortorum</h3>
                     <p>Vorderrand der hinteren Mesosomabinde gebogen. Behaarung lang, struppig, dadurch Farben an den Übergängen nicht scharf abgegrenzt. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH, D; häu g [Tie and bis Alpinstufe. Weites Lebensraumspektrum]</p>
                 </a>
+                <a href="#infoB11-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -660,6 +761,7 @@
                     <h3>Bombus ruderatus</h3>
                     <p>Vorderrand der hinteren Mesosomabinde gerade. Behaarung kurz und regelmäßig. Gelbe Binde auf T1 oft unterbrochen. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH, D; selten [Tie and bis Hügelstufe. Offenland]</p>
                 </a>
+                <a href="#infoB11-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -667,6 +769,7 @@
                     <h3>Bombus jonellus</h3>
                     <p>Interalarband des Mesosomas ist ca. doppelt so breit wie die vordere gelbe Binde. Behaarung mittellang und regelmäßig. Kopf kurz (Abb. 17). Mittelmetatarsus abgerundet (Abb. 8). A, CH, D; selten [Tie and bis Krummholzstufe. Offenlandart bis lockere Baum- und Gehölzbestände]</p>
                 </a>
+                <a href="#infoB11-3" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -674,6 +777,7 @@
                     <h3>Bombus subterraneus</h3>
                     <p>Mesosomabinden dunkelgelb. Weiße Behaarung des Metaso- mas ab Hinterrand von T3. Diese kann manchmal gelb sein. Hinterrand von T2 mit einer schmalen weißen Binde. Behaa- rung kurz und regelmäßig. Kopf lang. Mittelmetatarsus spitz (Abb. 7). A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland]</p>
                 </a>
+                <a href="#infoB11-4" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -681,8 +785,62 @@
                     <h3>Bombus argillaceus - Arbeiterin</h3>
                     <p>Binden des Mesosomas breit dunkelgelb. T1 des Metasomas gelb behaart. Behaarung kurz und regelmäßig, dadurch erschei- nen die einzelnen Farben deutlich voneinander abgegrenzt. In- teralarband schmäler als vordere Binde. Flügel sind bräunlich. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH (jeweils im Süden); [Tie and bis Bergwaldstufe. Offenland (trocken)]</p>
                 </a>
+                <a href="#infoB11-5" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoB11-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/16.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/7.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB11-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/16.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/7.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB11-3">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/17.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/8.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB11-4">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/7.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoB11-5">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/16.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/7.png" />
     </div>
 </div>
 

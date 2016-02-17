@@ -121,3 +121,11 @@ h3 {
     font-family: 'Avenir';
     font-size: 120%;
 }
+
+img {
+    vertical-align: middle;
+}
+
+img.dialog {
+    width: 100%;
+}
