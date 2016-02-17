@@ -197,7 +197,7 @@ div.ui-mobile-viewport {
 	padding: .7em 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: normal;
 	outline: 0 !important;
 }
 .ui-footer .ui-title {
@@ -236,7 +236,7 @@ div.ui-mobile-viewport {
 	text-align: center;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: normal;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -250,7 +250,7 @@ div.ui-mobile-viewport {
 	width: 1.75em;
 	height: 1.75em;
 	text-indent: -9999px;
-	white-space: nowrap !important;
+	white-space: normal !important;
 }
 .ui-mini {
 	font-size: 12.5px;
@@ -2209,7 +2209,7 @@ fieldset.ui-controlgroup {
 	display: block;
 	text-overflow: ellipsis;
 	overflow: hidden !important;
-	white-space: nowrap;
+	white-space: normal;
 }
 .ui-selectmenu.ui-popup {
 	min-width: 11em;
@@ -2301,7 +2301,7 @@ fieldset.ui-controlgroup {
 	text-align: left;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: normal;
 }
 .ui-listview > li > .ui-btn:focus {
 	z-index: 1;
@@ -2453,7 +2453,7 @@ fieldset.ui-controlgroup {
 	margin: .45em 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: normal;
 }
 .ui-listview > li p {
 	font-size: .75em;
@@ -2462,7 +2462,7 @@ fieldset.ui-controlgroup {
 	margin: .6em 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	white-space: nowrap;
+	white-space: normal;
 }
 .ui-listview .ui-li-aside {
 	position: absolute;
@@ -2687,7 +2687,7 @@ div.ui-slider-switch.ui-mini {
 	top: 0;
 	line-height: 2;
 	min-height: 100%;
-	white-space: nowrap;
+	white-space: normal;
 	cursor: pointer;
 }
 .ui-slider-switch.ui-mini .ui-slider-label {
