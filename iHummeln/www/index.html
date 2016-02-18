@@ -9,7 +9,8 @@
     <script src="js/jQuery.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
-    <script src="js/angular.js"></script>
+    <script src="js/angularjs/angular.js"></script>
+    <script src="js/angularjs/ngStorage.js"></script>
     <script src="js/ihummeln.js"></script>
 
 
@@ -274,7 +275,7 @@
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('1', 'Waldhummel - Bombus sylvarum', 'images/hummel/a4-1.png')">
                     <img src="images/hummel/a4-1.png" width="100px" />
                     <h3>Waldhummel - Bombus sylvarum</h3>
                     <p>Orange Behaarung des Metasomas ab dem Beginn von T4. T2 bis T5 am Hinterrand strohgelb behaart. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Auffällig hoher Flugton. A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestände.]</p>
@@ -2924,6 +2925,18 @@
         <h1>Identifizierte Hummeln</h1>
     </div>
     <div data-role="content">
+        <ul data-role="listview" data-split-icon="delete">
+            <li ng-repeat="hummel in hummeln">
+                <a href="#">
+                   <img src="{{hummel.picPath}}" width="100px" />
+                    <h3>{{hummel.name}}</h3>
+                    <p>Longitude: {{hummel.longitude}}</p>
+                    <p>Latitude: {{hummel.latitude}}</p>
+                    <p>Timestamp: {{hummel.timestamp}}</p>
+                </a>
+                <a href="#" ng-click="delete(hummel.Id)"></a>
+            </li>
+        </ul>
     </div>
 </div>
 
