@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="iHummelApp">
 
 <head>
     <meta charset="utf-8" />
@@ -9,18 +9,16 @@
     <script src="js/jQuery.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
-    <!--
     <script src="js/angular.js"></script>
-    <script src="js/angular-route.js"></script>
     <script src="js/ihummeln.js"></script>
--->
+
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/hummel.css" />
     <link rel="stylesheet" type="text/css" href="css/jQueryMobile/jquery.mobile-1.4.5.css" />
 </head>
 
-<body>
+<body ng-controller="mainController">
     <div data-role="page" id="index" class="app-icon">
         <div data-role="header">
             <h1>iHummeln</h1>
@@ -1326,7 +1324,7 @@
                     <img src="images/hummel/b22-1.png" width="100px" />
                     <h3>Distelhummel - Bombus soroeensis</h3>
                     <p>
-                        Orange Behaarung des Metasomas erst ab der Mitte von T4. Nur die letzten Sterna orange behaart. Corbiculahaare schwarz, höchstens die Spitzen aufgehellt. Außenseite des Mittelmetatarsus nur mit kurzen dicken Haaren (Abb. 10), dieser abgerundet (Abb. 8). Bei alle anderen Arten in dieser Tabelle Außenseite des Mittelmetatarsus mit kurzen dicken und langen dünnen Haaren (Abb. 9). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). A und CH (häu g), D (nach Norden immer seltener) [Hügelstufe bis Alpin- stufe. Offenland bis lockere Baum- und Gehölzbestände]
+                        Orange Behaarung des Metasomas erst ab der Mitte von T4. Nur die letzten Sterna orange behaart. Corbiculahaare schwarz, höchstens die Spitzen aufgehellt. Außenseite des Mittelmetatarsus nur mit kurzen dicken Haaren (Abb. 10), dieser abgerundet (Abb. 8). Bei alle anderen Arten in dieser Tabelle Außenseite des Mittelmetatarsus mit kurzen dicken und langen dünnen Haaren (Abb. 9). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). A und CH (häufig), D (nach Norden immer seltener) [Hügelstufe bis Alpin- stufe. Offenland bis lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
                 <a href="#infoB22-1" data-rel="dialog"></a>
@@ -1339,6 +1337,7 @@
                         Nur die letzten Sterna des Metasomas orange behaart. Corbicu- lahaare schwarz, höchstens die Spitzen aufgehellt. Kopfnahes Mesosoma nie mit gelben Haaren (vergl. B. pratorum). Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Bei Königinnen T6 mit haarloser kreisrunder Erhebung (Abb. 23). A, CH, D; häu g [Tie and bis Bergwaldstufe. Weites Lebensraumspektrum]
                     </p>
                 </a>
+                <a href="#infoB22-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1348,7 +1347,7 @@
                         Nur die letzten Sterna des Metasomas orange behaart. Corbicu- lahaare deutlich orange gefärbt. Manchmal 2 helle Binden auf dem Mesosoma und/oder T2 hell. Mittelmetatarsus spitz, dornartig ausgezogen (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). A, CH, D [Tie and bis Alpinstufe. Offenland bis lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
-                <a href="#infoB22-2" data-rel="dialog"></a>
+                <a href="#infoB22-3" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1358,7 +1357,7 @@
                         Nur die letzten Sterna des Metasomas orange behaart. Corbicu- lahaare deutlich orange gefärbt. Oft helle Haare im „Gesicht“. Mesosoma und T1 oft mit gelben Haaren. Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied fast so lang wie 4., 5. und 6. zusammen (Abb. 12). A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge] Seltene dunkle Form von: Trughummel - Bombus mendax
                     </p>
                 </a>
-                <a href="#infoB22-3" data-rel="dialog"></a>
+                <a href="#infoB22-4" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1368,6 +1367,7 @@
                         Alle Sterna des Metasomas orange behaart. Corbiculahaare schwarz, höchstens die Spitzen aufgehellt.Behaarung sehr kurz, wie geschoren. Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied nur wenig länger als das 4. und 5. zusammen (Abb. 13). A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoB22-5" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1386,9 +1386,13 @@
     <h1></h1>
     </div>
     <div data-role="content">
-        <img class="dialog" src="images/hummel/abb/17.png" />
+        <img class="dialog" src="images/hummel/abb/10.png" />
         <hr />
-        <img class="dialog" src="images/hummel/abb/18.png" />
+        <img class="dialog" src="images/hummel/abb/8.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/9.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/11.png" />
     </div>
 </div>
 
@@ -1397,9 +1401,11 @@
     <h1></h1>
     </div>
     <div data-role="content">
-        <img class="dialog" src="images/hummel/abb/17.png" />
+        <img class="dialog" src="images/hummel/abb/8.png" />
         <hr />
-        <img class="dialog" src="images/hummel/abb/18.png" />
+        <img class="dialog" src="images/hummel/abb/11.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/23.png" />
     </div>
 </div>
 
@@ -1408,9 +1414,9 @@
     <h1></h1>
     </div>
     <div data-role="content">
-        <img class="dialog" src="images/hummel/abb/17.png" />
+        <img class="dialog" src="images/hummel/abb/7.png" />
         <hr />
-        <img class="dialog" src="images/hummel/abb/18.png" />
+        <img class="dialog" src="images/hummel/abb/11.png" />
     </div>
 </div>
 
@@ -1419,9 +1425,9 @@
     <h1></h1>
     </div>
     <div data-role="content">
-        <img class="dialog" src="images/hummel/abb/17.png" />
+        <img class="dialog" src="images/hummel/abb/8.png" />
         <hr />
-        <img class="dialog" src="images/hummel/abb/18.png" />
+        <img class="dialog" src="images/hummel/abb/12.png" />
     </div>
 </div>
 
@@ -1430,9 +1436,9 @@
     <h1></h1>
     </div>
     <div data-role="content">
-        <img class="dialog" src="images/hummel/abb/17.png" />
+        <img class="dialog" src="images/hummel/abb/8.png" />
         <hr />
-        <img class="dialog" src="images/hummel/abb/18.png" />
+        <img class="dialog" src="images/hummel/abb/13.png" />
     </div>
 </div>
 
@@ -1669,15 +1675,16 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/c6-1.png" width="100px" />
                     <h3>Wiesenhummel - Bombus pratorum</h3>
                     <p>
-                        Orange Behaarung ab Beginn oder Endrand von T4. Augen normal groß, seitliche Ocelli mehr als doppelter Ocel- lusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D; häu g [Tie and bis Alpinstufe. Weites Lebensraumspektrum]
+                        Orange Behaarung ab Beginn oder Endrand von T4. Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D; häu g [Tie and bis Alpinstufe. Weites Lebensraumspektrum]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1687,6 +1694,7 @@
                         Alle Terga des Metasomas am Hinterrand strohgelb behaart. Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1696,6 +1704,7 @@
                         Orange Behaarung ab Hinterrand von T3. „Gesicht“ wenig kontrastreich gelb behaart – auch oberhalb der Antennenbasis +/- gelb. Augen normal groß, seitliche Ocelli mehr als doppelter Ocel- lusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1705,6 +1714,7 @@
                         Orange Behaarung ab Vorderrand von T4. Gelbe Clypeusbe- haarung kontrastiert deutlich mit der übrigen dunklen „Ge- sichtsbehaarung“ – diese vor allem oberhalb der Antennenbasis schwarz. Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1714,6 +1724,7 @@
                         Augen sehr groß, seitliche Ocelli daher nur einfachen Ocellus- durchmesser vom Augeninnenrand entfernt (Abb. 26). Verhal- tensmerkmal: sitzt auffällig auf Warten und verfolgt iegende Objekte. A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC6-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1723,6 +1734,7 @@
                         Metasoma ab T2 orange behaart. Hintere gelbe Mesosomabinde „v“-förmig. Augen normal groß, seitliche Ocelli mehr als doppelter Ocel- lusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1732,6 +1744,7 @@
                         Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A (Süden), CH [Bergwaldstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1742,6 +1755,24 @@
                 </a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoC6-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/25.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoC6-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/26.png" />
     </div>
 </div>
 
@@ -1804,7 +1835,7 @@
                     <img src="images/hummel/c8-1.png" width="100px" />
                     <h3>Steinhummel - Bombus lapidarius</h3>
                     <p>
-                        Gelbe Clypeusbehaarung kontrastiert deutlich mit der übrigen dunklen „Gesichtsbehaarung“ – diese vor allem oberhalb der Antennenbasis schwarz. Orange Behaarung kann bei älteren Individuen bis hin zu Gelb ausbleichen. A, CH, D; häu g [Tie and bis Bergwaldstufe. Weites Lebensraumspektrum]
+                        Gelbe Clypeusbehaarung kontrastiert deutlich mit der übrigen dunklen „Gesichtsbehaarung“ – diese vor allem oberhalb der Antennenbasis schwarz. Orange Behaarung kann bei älteren Individuen bis hin zu Gelb ausbleichen. A, CH, D; häufig [Tiefland bis Bergwaldstufe. Weites Lebensraumspektrum]
                     </p>
                 </a>
             </li>
@@ -1847,7 +1878,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/c10-1.png" width="100px" />
@@ -1856,6 +1887,7 @@
                         Vorder- und Hinterrand des Interalarbands parallel. Auf T6 schwarze und gelbe Haare vermischt. Antennenglieder leicht bogig erweitert (Abb. 27). Größte Hum- melart Europas. A (Osten); ausgestorben [Tie and. Offenland (trocken)]
                     </p>
                 </a>
+                <a href="#infoC10-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1865,6 +1897,7 @@
                         Mittel eck des Mesosomas oval. T6 ohne schwarze Haare. Antennenglieder stark bogig erweitert (Abb. 28). A (Osten); wahrscheinlich ausgestorben [Tie and. Offenland (trocken)]
                     </p>
                 </a>
+                <a href="#infoC10-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1874,8 +1907,36 @@
                         Vorder- und Hinterrand des Interalarbands parallel. T6 ohne schwarze Haare. Antennenglieder parallelseitig (Abb. 35). A, CH, D (jeweils im Norden); sehr selten [Tie and bis Buchenwaldstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoC10-3" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoC10-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/27.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoC10-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/28.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoC10-3">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/35.png" />
     </div>
 </div>
 
@@ -1885,7 +1946,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/c11-1.png" width="100px" />
@@ -1894,6 +1955,7 @@
                         T2 dunkel behaart, sonst ganzes Metasoma strohgelb. Behaa- rung lang und schütter, Cuticula scheint durch. Antennenglieder leicht bogig erweitert (Abb. 27). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoC11-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1903,6 +1965,7 @@
                         T2 - T5 mit einer Reihe schwarzer und einer Reihe strohgelber Haare. T6 hauptsächlich schwarz oder braun. Antennenglieder stark bogig erweitert (Abb. 28). A, CH, D [Tie and bis Buchenwaldstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoC11-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -1912,8 +1975,36 @@
                         Metasoma gelbbraun behaart, zumindest auf T2, T3 und T6 mit schwarzen Haaren. Antennenglieder parallelseitig (Abb. 35). A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoC11-3" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoC11-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/27.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoC11-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/28.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoC11-3">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/35.png" />
     </div>
 </div>
 
@@ -2110,20 +2201,40 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#ArtentabelleE15">
                     <img src="images/hummel/e3-1.png" width="100px" />
                     <p>T2 mit deutlicher gelber Binde. Hintertibia außen eher ach, mit haarloser glänzender Fläche (Abb. 29).</p>
                 </a>
+                <a href="#infoE3-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#ArtentabelleE10">
                     <img src="images/hummel/e3-2.png" width="100px" />
                     <p>T2 ohne deutliche gelbe Binde. Hintertibia außen gebogen, dicht behaart (Abb. 30).</p>
                 </a>
+                <a href="#infoE3-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE3-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/29.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE3-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/30.png" />
     </div>
 </div>
 
@@ -2133,18 +2244,42 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#ArtentabelleE11">
                     <p>Kopf kurz (Abb. 17). Hintertibia außen gebogen, dicht behaart (Abb. 30).</p>
                 </a>
+                <a href="#infoE4-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#ArtentabelleE13">
                     <p>Kopf lang (Abb. 16). Hintertibia außen eher ach, mit haarloser glänzender Fläche (Abb. 29).</p>
                 </a>
+                <a href="#infoE4-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE4-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+        <img class="dialog" src="images/hummel/abb/17.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/30.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE4-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/16.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/29.png" />
     </div>
 </div>
 
@@ -2154,13 +2289,14 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#ArtentabelleE18">
                     <img src="images/hummel/e5-1.png" width="100px" />
                     <h3>Metasoma</h3>
                     <p>gelb behaart, nur T7 mit schwarzen Haa- ren. Kein Kieferbart (Abb. 33).</p>
                 </a>
+                <a href="#infoE5-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#ArtentabelleE12">
@@ -2168,8 +2304,27 @@
                     <h3>Metasoma</h3>
                     <p>gelb behaart, neben T7 noch andere Terga mit schwarzen Haaren. Kieferbart vorhanden (Abb. 34).</p>
                 </a>
+                <a href="#infoE5-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE5-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/33.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE5-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/34.png" />
     </div>
 </div>
 
@@ -2211,18 +2366,38 @@
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#ArtentabelleE17">
                     <p>Hintertibia außen gebogen, dicht behaart (Abb. 30).</p>
                 </a>
+                <a href="#infoE7-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#ArtentabelleE9">
                     <p>Hintertibia außen eher ach, mit haarloser glänzender Fläche (Abb 29).</p>
                 </a>
+                <a href="#infoE7-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE7-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/30.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE7-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/29.png" />
     </div>
 </div>
 
@@ -2232,7 +2407,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
            <li>
                <p>
                    Die folgenden Arten sind im Freiland nicht sicher unterscheidbar!
@@ -2246,6 +2421,7 @@
                         Scapus stark behaart (Abb. 31). Die letzten 8 Antennenglieder etwa 2 mal so lang wie breit. Sternum 7 mit zwei Höckern. Wirtsart: B. hypnorum A, CH, D [Hügelstufe bis Bergwaldstufe. Wälder bis lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoE8-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2255,6 +2431,7 @@
                         Scapus spärlich behaart (Abb. 32). Die letzten 8 Antennenglie- der ca. 1,5 mal so lang wie breit. Sternum 7 mit zwei Höckern. Wirte: B. pratorum (B. jonellus) A, CH, D; häu g [Bergwaldstufe bis Krummholzstufe. Lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoE8-2" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2264,8 +2441,27 @@
                         Scapus stark behaart (Abb. 31). Die letzten 8 Antennenglieder ca. 1,5 mal so lang wie breit. Sternum 7 ohne Höcker. Nur in den Alpen zu erwarten. Wirte: B. monticola (B. jonellus) A, CH, D [Bergwaldstufe bis Krummholzstufe. Offenland bis lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoE8-1" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE8-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/31.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE8-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/32.png" />
     </div>
 </div>
 
@@ -2275,7 +2471,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/e9-1.png" width="100px" />
@@ -2284,6 +2480,7 @@
                         Mesosoma seitlich deutlich gelb behaart. Orange Behaarung des Metasomas ab Mitte von T4. Behaarung mittellang. Augen normal groß, Seitenocelli mindestens doppelten Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A und CH (häu g), D (nach Norden immer seltener) [Hügelstufe bis Alpin- stufe. Offenland bis lockere Baum- und Gehölzbestände] Seltene dunkle Form von: Distelhummel - Bombus soroeensis
                     </p>
                 </a>
+                <a href="#infoE9-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2293,19 +2490,46 @@
                         Mesosoma seitlich schwarz behaart. Orange Behaarung des Metasomas ab Beginn von T4. Behaarung sehr kurz, wie geschoren. Augen auffällig groß, daher Seitenocelli nur einfachen Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 26). Verhaltensmerkmal: sitzt auffällig auf Warten und verfolgt fliegende Objekte. A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland] Seltene dunkle Form von: Bombus confusus
                     </p>
                 </a>
+                <a href="#infoE9-2" data-rel="dialog"></a>
             </li>
             <li>
-                <li>
-                    <a href="#unbestimmt">
-                        <img src="images/hummel/e9-3.png" width="100px" />
-                        <h3>Bombus ruderarius</h3>
-                        <p>
-                            Mesosoma seitlich schwarz behaart. Orange Behaarung des Metasomas ab Beginn von T4. Behaarung lang. Augen normal groß, Seitenocelli mindestens doppelten Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Tie and bis Alpinstufe. Offenland bis lockere Baum- und Gehölzbestände]
-                        </p>
-                    </a>
-                </li>
-                <li>
+                <a href="#unbestimmt">
+                    <img src="images/hummel/e9-3.png" width="100px" />
+                    <h3>Bombus ruderarius</h3>
+                    <p>
+                        Mesosoma seitlich schwarz behaart. Orange Behaarung des Metasomas ab Beginn von T4. Behaarung lang. Augen normal groß, Seitenocelli mindestens doppelten Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Tie and bis Alpinstufe. Offenland bis lockere Baum- und Gehölzbestände]
+                    </p>
+                </a>
+                <a href="#infoE9-3" data-rel="dialog"></a>
+            </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE9-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/25.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE9-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/26.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE9-3">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/25.png" />
     </div>
 </div>
 
@@ -2315,7 +2539,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
            <li>
                <p>
                    Die folgenden Arten sind im Freiland nicht immer sicher unterscheidbar!
@@ -2329,6 +2553,7 @@
                         Das 3. und 4. Antennenglied sind zusammen etwa so lang wie das 5 (Abb. 35). Behaarung kurz. Wirt: B. terrestris A, CH, D [Tie and bis Hügelstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoE10-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2338,8 +2563,27 @@
                         In weiße Haare auf T3 sind manchmal gelbe eingemischt. Das 3. und 4. Antennenglied sind zusammen deutlich länger als das 5 (Abb. 36). Behaarung lang. Wirt: B. lucorum (B. cryptarum?, B. magnus?) A, CH, D [Tie and bis Bergwaldstufe]
                     </p>
                 </a>
+                <a href="#infoE10-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE10-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/35.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE10-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/36.png" />
     </div>
 </div>
 
@@ -2383,7 +2627,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/e12-1.png" width="100px" />
@@ -2392,18 +2636,41 @@
                         T2 dunkel, restliches Metasoma gelb behaart. Behaarung lang und schütter. Kopf lang (Abb. 16). Hintertibia außen eher ach, mit haarloser glänzender Fläche (Abb. 29). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoE12-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/e12-2.png" width="100px" />
                     <h3>Bombus (Psithyrus) campestris</h3>
                     <p>
-                        Gelbe Behaarung des Mesosoma kann verdunkelt sein. Kopf kurz (Abb. 17). Hintertibia außen gebogen, dicht behaart (Abb. 30). Wirte: B. pascuorum, B. humilis (B. pomorum, B. pratorum) A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestän- de]
-
+                        Gelbe Behaarung des Mesosoma kann verdunkelt sein. Kopf kurz (Abb. 17). Hintertibia außen gebogen, dicht behaart (Abb. 30). Wirte: B. pascuorum, B. humilis (B. pomorum, B. pratorum) A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoE12-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE12-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/16.png" />
+       <hr />
+       <img class="dialog" src="images/hummel/abb/29.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE12-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/17.png" />
+       <hr />
+       <img class="dialog" src="images/hummel/abb/30.png" />
     </div>
 </div>
 
@@ -2598,7 +2865,7 @@
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
-        <ul data-role="listview">
+        <ul data-role="listview" data-split-icon="info">
             <li>
                 <a href="#unbestimmt">
                     <img src="images/hummel/e19-1.png" width="100px" />
@@ -2607,6 +2874,7 @@
                         Orange Behaarung des Metasomas ab Mitte von T4. Augen normal groß, Seitenocelli mindestens doppelten Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A und CH (häufig), D (nach Norden immer seltener) [Hügelstufe bis Alpin- stufe. Offenland bis lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
+                <a href="#infoE19-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2616,6 +2884,7 @@
                         Orange Behaarung des Metasomas ab T2. Augen normal groß, Seitenocelli mindestens doppelten Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH [Alpinstufe bis Schneestufe. Hochgebirge]
                     </p>
                 </a>
+                <a href="#infoE19-1" data-rel="dialog"></a>
             </li>
             <li>
                 <a href="#unbestimmt">
@@ -2625,8 +2894,27 @@
                         Orange Behaarung des Metasomas ab Beginn von T4. Augen auffällig groß, Seitenocelli nur einfachen Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 26). A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland]
                     </p>
                 </a>
+                <a href="#infoE19-2" data-rel="dialog"></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div data-role="page" id="infoE19-1">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/25.png" />
+    </div>
+</div>
+
+<div data-role="page" id="infoE19-2">
+    <div data-role="header" data-add-back-btn="true">
+    <h1></h1>
+    </div>
+    <div data-role="content">
+       <img class="dialog" src="images/hummel/abb/26.png" />
     </div>
 </div>
 
