@@ -19,6 +19,7 @@ iHummelControllers.controller('mainController', ['$scope', '$localStorage',
                 }
             }
             $localStorage.hummeln = hummelnNew;
+            location.reload();
         };
 
         $scope.add = function (id, name, path) {
@@ -41,10 +42,16 @@ iHummelControllers.controller('mainController', ['$scope', '$localStorage',
             } else {
                 var hummelnNew = $localStorage.hummeln;
                 hummelnNew.push(newHummel);
-                console.log(JSON.stringify(newHummel));
             }
 
             $localStorage.hummeln = hummelnNew;
             $localStorage.idCount++;
+            window.location = '/';
+            location.reload();
+        };
+
+        $scope.clearAll = function (){
+            localStorage.clear();
+            location.reload();
         };
     }]);

@@ -44,7 +44,7 @@
 <!--Tab Neue Hummel Identifizieren-->
 <!--Neue Hummel identifizieren-->
 <div data-role="page" id="NeueHummelBestimmen">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -95,7 +95,7 @@
 
 <!--Neue Hummel bestimmen 2-->
 <div data-role="page" id="NeueHummelBestimmen2">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -120,7 +120,7 @@
 
 <!--Neue Hummel bestimmen 3-->
 <div data-role="page" id="NeueHummelBestimmen3">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -156,7 +156,7 @@
 
 <!--Neue Hummel bestimmen 4-->
 <div data-role="page" id="NeueHummelBestimmen4">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -189,7 +189,7 @@
 
 <!--Schlüssel A1-->
 <div data-role="page" id="NeueHummelBestimmenA">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -221,7 +221,7 @@
 
 <!--Schlüssel A2-->
 <div data-role="page" id="NeueHummelBestimmenA2">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -246,7 +246,7 @@
 
 <!--Schlüssel A3-->
 <div data-role="page" id="NeueHummelBestimmenA3">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -269,7 +269,7 @@
 
 <!--Artentabelle A4-->
 <div data-role="page" id="ArtentabelleA4">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
@@ -283,7 +283,7 @@
                 <a href="#infoA4-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('2', 'Trughummel - Bombus mendax', 'images/hummel/a4-2.png')">
                     <img src="images/hummel/a4-2.png" width="100px" />
                     <h3>Trughummel - Bombus mendax</h3>
                     <p>Orange Behaarung des Metasomas ab dem Hinterrand von T3. Gelbe Binden des Mesosomas oft sehr schwach entwickelt bis fast fehlend. Mittelmetatarsus abgerundet (Abb. 8). 3. Antennenglied fast so lange, wie die drei folgenden Glieder zusammen (Abb. 12). A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]</p>
@@ -291,7 +291,7 @@
                 <a href="#infoA4-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('3', 'Bombus inexspectatus', 'images/hummel/a4-3.png')">
                     <img src="images/hummel/a4-3.png" width="100px" />
                     <h3>Bombus inexspectatus</h3>
                     <p>Orange Behaarung des Metasomas ab dem Vorderrand von T4. Terga ohne helle Hinterränder. Mittelmetatarsus spitz (Abb. 7). 3. Antennenglied kürzer als das 4. und 5. zusammen (Abb. 11). Obligater Brutparasit an B. ruderarius, daher gibt es keine Arbeiterinnen. A (Süden), CH; selten [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
@@ -337,20 +337,20 @@
 
 <!--Artentabelle A5-->
 <div data-role="page" id="ArtentabelleA5">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('4', 'Bombus distinguendus', 'images/hummel/a5-1.png')">
                     <img src="images/hummel/a5-1.png" width="100px" />
                     <h3>Bombus distinguendus</h3>
                     <p>Gesamter Körper dunkelgelb. Mesosoma mit schwarzem Mittel eck, dessen Vorder- und Hinterrand +/- parallel. Behaarung kurz, samtartig. Flügel leicht gebräunt. A, CH, D (jeweils im Norden); sehr selten [Tie and bis Buchenwaldstufe. Offenland]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('5', 'Bombus laesus', 'images/hummel/a5-2.png')">
                     <img src="images/hummel/a5-2.png" width="100px" />
                     <h3>Bombus laesus</h3>
                     <p>Gesamter Körper dunkelgelb. Mesosoma mit schwarzem, rundem Mittel eck. Behaarung kurz, samtartig. A (Osten); wahrscheinlich ausgestorben [Tie and. Offenland (trocken)]</p>
@@ -362,20 +362,20 @@
 
 <!--Artentabelle A6-->
 <div data-role="page" id="ArtentabelleA6">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('6', 'Grauweiße Hummel - Bombus mucidus', 'images/hummel/a6-1.png')">
                     <img src="images/hummel/a6-1.png" width="100px" />
                     <h3>Grauweiße Hummel - Bombus mucidus</h3>
                     <p>Grundfarbe graugelb. T2 dunkelbraun bis schwarz behaart, T3 - T5 nur gelb behaart. Behaarung struppig und schütter. A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('7', 'Bombus veteranus', 'images/hummel/a6-2.png')">
                     <img src="images/hummel/a6-2.png" width="100px" />
                     <h3>Bombus veteranus</h3>
                     <p>Grundfarbe graugelb. Vorderrand T2 - T5 bzw. T3 - T5 dunkel behaart, am Hinterrand hell behaart. A, CH, D [Tie and bis Buchenwaldstufe. Offenland]</p>
@@ -387,27 +387,27 @@
 
 <!--Artentabelle A7-->
 <div data-role="page" id="ArtentabelleA7">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('8', 'Veränderliche Hummel - Bombus humilis', 'images/hummel/a7-1.png')">
                     <img src="images/hummel/a7-1.png" width="100px" />
                     <h3>Veränderliche Hummel - Bombus humilis</h3>
                     <p>Sehr variabel gefärbte Art. Das Mesosoma kann braun bis schwarz gefärbt sein, seitlich oft mit hellen Haaren. Wenn schwarze Haare vorhanden, bilden diese nie ein Dreieck. Behaarung mit verschieden langen Haaren. Beginn der braunen Behaarung am Metasoma variiert, diese oft mit schwarzen Haaren durchmischt. Generell wird die Färbung des Metasomas zum Hinterende hin gelb. Lange Haare auf T6 schwarz. A, CH, D [Tie and bis (untere) Bergwaldstufe. Offenland bis lockere Baum- und Gehölzbestände]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('9', 'Ackerhummel - Bombus pascuorum', 'images/hummel/a7-2.png')">
                     <img src="images/hummel/a7-2.png" width="100px" />
                     <h3>Ackerhummel - Bombus pascuorum</h3>
                     <p>Sehr variabel gefärbte Art. Das Mesosoma ist braun behaart mit hellen Seitenrändern. Teil- weise Dreieck aus schwarzen Haaren vorhanden. Behaarung mit verschieden langen Haaren. Metasoma sehr variabel gefärbt. T1 - T3 hell behaart, mit schwarzen Haaren, wobei T2 und T3 manchmal ganz schwarz behaart sein können. Generell wird die Färbung des Metasomas zum Hinterende hin braun. Lange Haare auf T6 hell, seitlich manchmal schwarze Haare. A, CH, D; häu g [Tie and bis Bergwaldstufe. Offenland bis lockere Baumund Gehölzbestände]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('10', 'Bombus muscorum', 'images/hummel/a7-3.png')">
                     <img src="images/hummel/a7-3.png" width="100px" />
                     <h3>Bombus muscorum</h3>
                     <p>Mesosoma braun behaart, seitlich gelbe Haare. Metasoma: Hinterränder der Terga sind heller behaart. Schwarze Haare nur auf T6. Behaarung gleichmäßig, sehr kurz. Auffallend hoher Flugton. A, CH, D; selten [Tie and bis Buchenwaldstufe. Offenland (feucht)]</p>
@@ -419,13 +419,13 @@
 
 <!--Artentabelle A8-->
 <div data-role="page" id="ArtentabelleA8">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('11', 'Bombus semenoviellus', 'images/hummel/a8-1.png')">
                     <img src="images/hummel/a8-1.png" width="100px" />
                     <h3>Bombus semenoviellus</h3>
                     <p>D; selten [Tie and bis Hügelstufe. Offenland]</p>
@@ -437,7 +437,7 @@
 
 <!--Schlüssel B1-->
 <div data-role="page" id="NeueHummelBestimmenB">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -460,7 +460,7 @@
 
 <div data-role="page" id="infoB1-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/6.png" />
@@ -478,7 +478,7 @@
 
 <!--Schlüssel B2-->
 <div data-role="page" id="NeueHummelBestimmenB2">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -510,7 +510,7 @@
 
 <!--Schlüssel B3-->
 <div data-role="page" id="NeueHummelBestimmenB3">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -535,7 +535,7 @@
 
 <!--Schlüssel B4-->
 <div data-role="page" id="NeueHummelBestimmenB4">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -558,7 +558,7 @@
 
 <div data-role="page" id="infoB4-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/14.png" />
@@ -567,7 +567,7 @@
 
 <div data-role="page" id="infoB4-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/15.png" />
@@ -576,7 +576,7 @@
 
 <!--Schlüssel B5-->
 <div data-role="page" id="NeueHummelBestimmenB5">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -599,7 +599,7 @@
 
 <!--Schlüssel B6-->
 <div data-role="page" id="NeueHummelBestimmenB6">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -624,7 +624,7 @@
 
 <!--Schlüssel B7-->
 <div data-role="page" id="NeueHummelBestimmenB7">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -649,7 +649,7 @@
 
 <!--Schlüssel B8-->
 <div data-role="page" id="NeueHummelBestimmenB8">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -688,7 +688,7 @@
 
 <!--Schlüssel B9-->
 <div data-role="page" id="NeueHummelBestimmenB9">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -713,7 +713,7 @@
 
 <!--Schlüssel B10-->
 <div data-role="page" id="NeueHummelBestimmenB10">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -736,18 +736,18 @@
 
 <!--Artentabelle B11-->
 <div data-role="page" id="ArtentabelleB11">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
-           <li>
-               <p>
-                   B. hortorum und B. ruderatus können im Freiland oft nicht sicher unterschieden werden.
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    B. hortorum und B. ruderatus können im Freiland oft nicht sicher unterschieden werden.
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('12', 'Gartenhummel - Bombus hortorum', 'images/hummel/b11-1.png')">
                     <img src="images/hummel/b11-1.png" width="100px" />
                     <h3>Gartenhummel - Bombus hortorum</h3>
                     <p>Vorderrand der hinteren Mesosomabinde gebogen. Behaarung lang, struppig, dadurch Farben an den Übergängen nicht scharf abgegrenzt. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH, D; häu g [Tie and bis Alpinstufe. Weites Lebensraumspektrum]</p>
@@ -755,7 +755,7 @@
                 <a href="#infoB11-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('13', 'Bombus ruderatus', 'images/hummel/b11-2.png')">
                     <img src="images/hummel/b11-2.png" width="100px" />
                     <h3>Bombus ruderatus</h3>
                     <p>Vorderrand der hinteren Mesosomabinde gerade. Behaarung kurz und regelmäßig. Gelbe Binde auf T1 oft unterbrochen. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH, D; selten [Tie and bis Hügelstufe. Offenland]</p>
@@ -763,7 +763,7 @@
                 <a href="#infoB11-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('14', 'Bombus jonellus', 'images/hummel/b11-3.png')">
                     <img src="images/hummel/b11-3.png" width="100px" />
                     <h3>Bombus jonellus</h3>
                     <p>Interalarband des Mesosomas ist ca. doppelt so breit wie die vordere gelbe Binde. Behaarung mittellang und regelmäßig. Kopf kurz (Abb. 17). Mittelmetatarsus abgerundet (Abb. 8). A, CH, D; selten [Tie and bis Krummholzstufe. Offenlandart bis lockere Baum- und Gehölzbestände]</p>
@@ -771,7 +771,7 @@
                 <a href="#infoB11-3" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('15', 'Bombus subterraneus', 'images/hummel/b11-4.png')">
                     <img src="images/hummel/b11-4.png" width="100px" />
                     <h3>Bombus subterraneus</h3>
                     <p>Mesosomabinden dunkelgelb. Weiße Behaarung des Metaso- mas ab Hinterrand von T3. Diese kann manchmal gelb sein. Hinterrand von T2 mit einer schmalen weißen Binde. Behaa- rung kurz und regelmäßig. Kopf lang. Mittelmetatarsus spitz (Abb. 7). A, CH, D; selten [Tie and bis Bergwaldstufe. Offenland]</p>
@@ -779,7 +779,7 @@
                 <a href="#infoB11-4" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('16', 'Bombus argillaceus - Arbeiterin', 'images/hummel/b11-5.png')">
                     <img src="images/hummel/b11-5.png" width="100px" />
                     <h3>Bombus argillaceus - Arbeiterin</h3>
                     <p>Binden des Mesosomas breit dunkelgelb. T1 des Metasomas gelb behaart. Behaarung kurz und regelmäßig, dadurch erschei- nen die einzelnen Farben deutlich voneinander abgegrenzt. In- teralarband schmäler als vordere Binde. Flügel sind bräunlich. Kopf sehr lang (Abb. 16). Mittelmetatarsus spitz (Abb. 7). A, CH (jeweils im Süden); [Tie and bis Bergwaldstufe. Offenland (trocken)]</p>
@@ -792,7 +792,7 @@
 
 <div data-role="page" id="infoB11-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/16.png" />
@@ -803,7 +803,7 @@
 
 <div data-role="page" id="infoB11-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/16.png" />
@@ -814,7 +814,7 @@
 
 <div data-role="page" id="infoB11-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/17.png" />
@@ -825,7 +825,7 @@
 
 <div data-role="page" id="infoB11-4">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/7.png" />
@@ -834,7 +834,7 @@
 
 <div data-role="page" id="infoB11-5">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/16.png" />
@@ -845,34 +845,34 @@
 
 <!--Artentabelle B12-->
 <div data-role="page" id="ArtentabelleB12">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('17', 'Grauweiße Hummel - Bombus mucidus', 'images/hummel/b12-1.png')">
                     <img src="images/hummel/b12-1.png" width="100px" />
                     <h3>Grauweiße Hummel - Bombus mucidus</h3>
                     <p>Grundfarbe überwiegend strohgelb. T2 dunkelbraun bis schwarz behaart, T3 - T5 nur hell behaart. Behaarung struppig und schütter. A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('18', 'Bombus mesomelas', 'images/hummel/b12-2.png')">
                     <img src="images/hummel/b12-2.png" width="100px" />
                     <h3>Bombus mesomelas</h3>
                     <p>Metasoma gelb, wobei T2 etwas dunkler ist. T3 – T5 am Vorderrand dunkelgelb zu den Hinterrändern hin aufgehellt. A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('19', 'Bombus armeniacus', 'images/hummel/b12-3.png')">
                     <img src="images/hummel/b12-3.png" width="100px" />
                     <h3>Bombus armeniacus</h3>
                     <p>Seiten des Mesosomas gelb behaart. Das gesamte Metasoma, mit Ausnahme von T6 ist gelb behaart. Behaarung kurz, samtartig. A (Osten); ausgestorben [Tie and. Offenland (trocken)]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('20', 'Bombus fragrans', 'images/hummel/b12-4.png')">
                     <img src="images/hummel/b12-4.png" width="100px" />
                     <h3>Bombus fragrans</h3>
                     <p>Seiten des Mesosomas meist schwarz behaart. Das gesamte Metasoma, mit Ausnahme von T6 ist gelb behaart. Behaarung kurz, samtartig. Größte europäische Hummelart. A (Osten); ausgestorben [Tie and. Offenland (trocken)]</p>
@@ -884,13 +884,13 @@
 
 <!--Artentabelle B13-->
 <div data-role="page" id="ArtentabelleB13">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('21', 'Wiesenhummel - Bombus pratorum', 'images/hummel/b13-1.png')">
                     <img src="images/hummel/b13-1.png" width="100px" />
                     <h3>Wiesenhummel - Bombus pratorum</h3>
                     <p>Metasoma: Orange Behaarung ab Vorderrand T4, niemals auf T3. Binde des Mesosomas und von T2 gelb (beides kann unter- schiedlich reduziert sein). Außenseite des Mittelmetatarsus mit kurzen dicken und langen dünnen Haaren (Abb. 9). Mandibel mit 2 Zähnen und geradem Kaurand (Abb. 19). A, CH, D; häu g [Tie and bis Alpinstufe. Weites Lebensraumspektrum]</p>
@@ -898,7 +898,7 @@
                 <a href="#infoB13-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('22', 'Distelhummel - Bombus soroeensis', 'images/hummel/b13-2.png')">
                     <img src="images/hummel/b12-2.png" width="100px" />
                     <h3>Distelhummel - Bombus soroeensis</h3>
                     <p>Metasoma: Orange Behaarung erst ab der Mitte von T4. Außenseite des Mittelmetatarsus mit kurzen dicken Haaren (Abb. 10). Mandibel mit 2 Zähnen und geradem Kaurand (Abb. 19). A und CH (häu g), D (nach Norden immer seltener) [Hügelstufe bis Alpin- stufe. Offenland bis lockere Baum- und Gehölzbestände] Seltenere helle Form von: Distelhummel - Bombus soroeensis</p>
@@ -906,15 +906,15 @@
                 <a href="#infoB13-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('23', 'Bergwaldhummel - Bombus wurflenii', 'images/hummel/b13-3.png')">
                     <img src="images/hummel/b13-3.png" width="100px" />
-                    <h3>Bergwaldhummel - Bombus wur enii</h3>
+                    <h3>Bergwaldhummel - Bombus wurflenii</h3>
                     <p>Metasoma: Orange Behaarung ab dem Hinterrand von T3. Bei manchen Individuen helle Binde am Mesosoma. Außenseite des Mittelmetatarsus mit kurzen dicken und langen dünnen Haaren (Abb. 9). Mandibel mit 6 Zähnen, kein gerader Kaurand (Abb. 18). A, CH, D [Bergwaldstufe bis Alpinstufe. Offenland bis lockere Baum- und Gehölzbestände, Hochgebirge]</p>
                 </a>
                 <a href="#infoB13-3" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('24', 'Berglandhummel - Bombus monticola', 'images/hummel/b13-4.png')">
                     <img src="images/hummel/b13-4.png" width="100px" />
                     <h3>Berglandhummel - Bombus monticola</h3>
                     <p>Metasoma: Orange Behaarung ab T2 oder Vorderrand von T3. Binde am kopfnahen Mesosoma und manchmal T1 gelb. Meso- somahinterrand mit schmalem „v“-förmigem Haarsaum. Außenseite des Mittelmetatarsus mit kurzen dicken und langen dünnen Haaren (Abb. 9). Mandibel mit 2 Zähnen und geradem Kaurand (Abb. 19). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]</p>
@@ -927,7 +927,7 @@
 
 <div data-role="page" id="infoB13-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/9.png" />
@@ -938,7 +938,7 @@
 
 <div data-role="page" id="infoB13-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/10.png" />
@@ -949,7 +949,7 @@
 
 <div data-role="page" id="infoB13-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/9.png" />
@@ -960,7 +960,7 @@
 
 <div data-role="page" id="infoB13-4">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/9.png" />
@@ -971,13 +971,13 @@
 
 <!--Artentabelle B14-->
 <div data-role="page" id="ArtentabelleB14">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('25', 'Felsen-Kuckuckshummel - Bombus (Psithyrus) rupestris', 'images/hummel/b14-1.png')">
                     <img src="images/hummel/b14-1.png" width="100px" />
                     <h3>Felsen-Kuckuckshummel - Bombus (Psithyrus) rupestris</h3>
                     <p>Orange Behaarung des Metasomas bei den meisten Individuen ab der hinteren Hälfte von T4, jedoch bei einigen Individuen schon mit Beginn von T4 bzw. erst ab T5. Behaarung schütter. St6 mit auffallend eckigen Leisten, die bei Dorsalansicht von T6 sichtbar sind (Abb. 20). Endsternum so lange wie Endtergum – Metasomaspitze nicht nach ventral gekrümmt (Abb. 15). Wirte: B. lapidarius, B. sichelii (B. sylvarum, B. pascuorum) A, CH, D [Tie and bis Alpinstufe. Lockere Baum- und Gehölzbestände]</p>
@@ -985,7 +985,7 @@
                 <a href="#infoB14-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('26', 'Bombus (Psithyrus) quadricolor', 'images/hummel/b14-2.png')">
                     <img src="images/hummel/b14-2.png" width="100px" />
                     <h3>Bombus (Psithyrus) quadricolor</h3>
                     <p>Orange Behaarung des Metasomas ab T3. Mesosoma vorne manchmal mit gelben Haaren. St6 mit schwach entwickelten Leisten, diese bei Dorsalansicht von T6 nicht sichtbar. Endsternum länger als Endtergum – Me- tasomaspitze nach ventral gekrümmt (Abb. 14). Eine hellere Form mit weißlich aufgehelltem T3 + T4 und einer gelben Mesosomabinde tritt sehr selten in N-Deutschland auf. Wirt: B. soroeensis A, CH, D [Bergwaldstufe bis Krummholzstufe. Lockere Baum- und Gehölzbestände]</p>
@@ -998,7 +998,7 @@
 
 <div data-role="page" id="infoB14-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/20.png" />
@@ -1009,7 +1009,7 @@
 
 <div data-role="page" id="infoB14-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/14.png" />
@@ -1018,25 +1018,25 @@
 
 <!--Artentabelle B15-->
 <div data-role="page" id="ArtentabelleB15">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
-           <li>
-               <p>
-                   Die folgenden beiden Arten sind im Freiland nicht immer sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden beiden Arten sind im Freiland nicht immer sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('27', 'Vestalis-Kuckuckshummel - Bombus (Psithyrus) vestalis', 'images/hummel/b15-1.png')">
                     <img src="images/hummel/b15-1.png" width="100px" />
                     <h3>Vestalis-Kuckuckshummel - Bombus (Psithyrus) vestalis</h3>
                     <p>T3 am Hinterrand seitlich meist gelb behaart. Gelbe Binde dunkelgelb. Behaarung schütter, kürzer als bei B. bohemicus. Wirt: B. terrestris A, CH, D [Tie and bis Hügelstufe. Offenland]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('28', 'Böhmische Kuckuckshummel - Bombus (Psithyrus) bohemicus', 'images/hummel/b15-2.png')">
                     <img src="images/hummel/b15-2.png" width="100px" />
                     <h3>Böhmische Kuckuckshummel - Bombus (Psithyrus) bohemicus</h3>
                     <p>T3 am Hinterrand seitlich meist weiß behaart. Gelbe Binde strohgelb. Behaarung schütter, länger als bei B. vestalis. Wirt: B. lucorum (B. cryptarum?, B. magnus?) A, CH, D [Tie and bis Bergwaldstufe]</p>
@@ -1048,20 +1048,20 @@
 
 <!--Artentabelle B16-->
 <div data-role="page" id="ArtentabelleB16">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('29', 'Bombus haematurus', 'images/hummel/b16-1.png')">
                     <img src="images/hummel/b16-1.png" width="100px" />
                     <h3>Bombus haematurus</h3>
                     <p>Mesosoma mit einer gelben Binde. T2 und T3 mit breiter gelber Binde. T5 ist mehr oder weniger braun behaart. A (Süden und Osten) [Tie and bis Hügelstufe. Wälder bis lockere Baum- und Gehölzbestände] In Ausbreitung begriffen.</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('30', 'Bombus argillaceus – Königin', 'images/hummel/b16-2.png')">
                     <img src="images/hummel/b16-2.png" width="100px" />
                     <h3>Bombus argillaceus – Königin</h3>
                     <p>Mesosoma mit zwei gelben Binden. Flügel sehr dunkel. A, CH (jeweils im Süden); [Tie and bis Bergwaldstufe. Offenland (trocken)]</p>
@@ -1073,25 +1073,25 @@
 
 <!--Artentabelle B17-->
 <div data-role="page" id="ArtentabelleB17">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
-           <li>
-               <p>
-                   Die folgenden beiden Arten sind im Freiland nicht immer sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden beiden Arten sind im Freiland nicht immer sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('31', 'Bombus (Psithyrus) barbutellus', 'images/hummel/b17-1.png')">
                     <img src="images/hummel/b17-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) barbutellus</h3>
                     <p>Binden des Mesosomas hellgelb. Metasomaende weiß, T5 jedoch oft mit schwarzen Haaren. T3 am Hinterrand seitlich teilweise mit weißen Haaren. Behaarung struppig. Flügel wenig verdunkelt. Wirte: B. hortorum, (B. hypnorum) A, CH, D [Tie and bis Bergwaldstufe. Wälder]</p>
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('32', 'Bombus (Psithyrus) maxillosus', 'images/hummel/b17-1.png')">
                     <img src="images/hummel/b17-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) maxillosus</h3>
                     <p>Binden des Mesosomas dunkelgelb, meist verdunkelt. Meta- somaende weiß, T5 jedoch oft mit schwarzen Haaren. T3 am Hinterrand seitlich teilweise mit weißen Haaren. Behaarung kurz und gleichmäßig. Flügel stark verdunkelt. Wirte: B. argillaceus, B. ruderatus A (Südosten) [Tie and bis Hügelstufe. Offenland]</p>
@@ -1103,18 +1103,18 @@
 
 <!--Artentabelle B18-->
 <div data-role="page" id="ArtentabelleB18">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
-           <li>
-               <p>
-                   Die folgenden drei Arten sind im Freiland nicht sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden drei Arten sind im Freiland nicht sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('33', 'Bombus (Psithyrus) sylvestris', 'images/hummel/b18-1.png')">
                     <img src="images/hummel/b18-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) sylvestris</h3>
                     <p>Scapus kaum behaart (Abb. 21). Wirte: B. pratorum (B. jonellus) A, CH, D; häu g [Bergwaldstufe bis Krummholzstufe. Lockere Baum- und Gehölzbestände]</p>
@@ -1122,7 +1122,7 @@
                 <a href="#infoB18-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('34', 'Bombus (Psithyrus) norvegicus', 'images/hummel/b18-1.png')">
                     <img src="images/hummel/b18-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) norvegicus</h3>
                     <p>
@@ -1132,9 +1132,9 @@
                 <a href="#infoB18-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('35', 'Bombus (Psithyrus) avidus', 'images/hummel/b18-1.png')">
                     <img src="images/hummel/b18-1.png" width="100px" />
-                    <h3>Bombus (Psithyrus)  avidus</h3>
+                    <h3>Bombus (Psithyrus) avidus</h3>
                     <p>
                         Scapus dicht behaart (Abb. 22). Wirte: B. monticola (B. jonellus) A, CH, D [Bergwaldstufe bis Krummholzstufe. Offenland bis lockere Baum- und Gehölzbestände]
                     </p>
@@ -1147,7 +1147,7 @@
 
 <div data-role="page" id="infoB18-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/21.png" />
@@ -1156,7 +1156,7 @@
 
 <div data-role="page" id="infoB18-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/22.png" />
@@ -1165,7 +1165,7 @@
 
 <div data-role="page" id="infoB18-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/22.png" />
@@ -1174,13 +1174,13 @@
 
 <!--Artentabelle B19-->
 <div data-role="page" id="ArtentabelleB19">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('36', 'Bombus (Psithyrus) campestris', 'images/hummel/b19-1.png')">
                     <img src="images/hummel/b19-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) campestris</h3>
                     <p>Metasoma ab Hinterrand von T3 gelb behaart. In der Mitte durch schwarze Haare unterbrochen oder kahl. Wirte: B. pascuorum, B. humilis (B. pomorum, B. pratorum) A, CH, D [Tie and bis Bergwaldstufe. Lockere Baum- und Gehölzbestän- de]
@@ -1193,13 +1193,13 @@
 
 <!--Artentabelle B20-->
 <div data-role="page" id="ArtentabelleB20">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('37', 'Baumhummel - Bombus hypnorum', 'images/hummel/b20-1.png')">
                     <img src="images/hummel/b20-1.png" width="100px" />
                     <h3>Baumhummel - Bombus hypnorum</h3>
                     <p>
@@ -1208,7 +1208,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('38', 'Bombus gerstaeckeri', 'images/hummel/b20-2.png')">
                     <img src="images/hummel/b20-2.png" width="100px" />
                     <h3>Bombus gerstaeckeri</h3>
                     <p>
@@ -1218,7 +1218,7 @@
                 <a href="#infoB20-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('39', 'Dunkle Erdhummel - Bombus terrestris (evtl. Bombus cryptarum)', 'images/hummel/b20-3.png')">
                     <img src="images/hummel/b20-3.png" width="100px" />
                     <h3>Dunkle Erdhummel - Bombus terrestris (evtl. Bombus cryptarum)</h3>
                     <p>
@@ -1232,7 +1232,7 @@
 
 <div data-role="page" id="infoB20-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/16.png" />
@@ -1241,13 +1241,13 @@
 
 <!--Artentabelle B21-->
 <div data-role="page" id="ArtentabelleB21">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('40', 'Bombus alpinus', 'images/hummel/b21-1.png')">
                     <img src="images/hummel/b21-1.png" width="100px" />
                     <h3>Bombus alpinus</h3>
                     <p>
@@ -1257,7 +1257,7 @@
                 <a href="#infoB21-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('41', 'Bombus pomorum', 'images/hummel/b21-2.png')">
                     <img src="images/hummel/b21-2.png" width="100px" />
                     <h3>Bombus pomorum</h3>
                     <p>
@@ -1267,7 +1267,7 @@
                 <a href="#infoB21-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('42', 'Bergwaldhummel - Bombus wurflenii', 'images/hummel/b21-3.png')">
                     <img src="images/hummel/b21-3.png" width="100px" />
                     <h3>Bergwaldhummel - Bombus wurflenii</h3>
                     <p>
@@ -1282,7 +1282,7 @@
 
 <div data-role="page" id="infoB21-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/17.png" />
@@ -1293,7 +1293,7 @@
 
 <div data-role="page" id="infoB21-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/16.png" />
@@ -1304,7 +1304,7 @@
 
 <div data-role="page" id="infoB21-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/17.png" />
@@ -1315,13 +1315,13 @@
 
 <!--Artentabelle B22-->
 <div data-role="page" id="ArtentabelleB22">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('43', '', 'images/hummel/b22-.png')">
                     <img src="images/hummel/b22-1.png" width="100px" />
                     <h3>Distelhummel - Bombus soroeensis</h3>
                     <p>
@@ -1331,7 +1331,7 @@
                 <a href="#infoB22-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('43', '', 'images/hummel/b22-.png')">
                     <img src="images/hummel/b22-2.png" width="100px" />
                     <h3>Steinhummel - Bombus lapidarius</h3>
                     <p>
@@ -1341,7 +1341,7 @@
                 <a href="#infoB22-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('43', '', 'images/hummel/b22-.png')">
                     <img src="images/hummel/b22-3.png" width="100px" />
                     <h3>Bombus ruderarius</h3>
                     <p>
@@ -1351,7 +1351,7 @@
                 <a href="#infoB22-3" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('44', 'Trughummel - Bombus mendax', 'images/hummel/b22-4.png')">
                     <img src="images/hummel/b22-4.png" width="100px" />
                     <h3>Trughummel - Bombus mendax</h3>
                     <p>
@@ -1361,7 +1361,7 @@
                 <a href="#infoB22-4" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('45', 'Bombus confusus', 'images/hummel/b22-5.png')">
                     <img src="images/hummel/b22-5.png" width="100px" />
                     <h3>Bombus confusus</h3>
                     <p>
@@ -1371,7 +1371,7 @@
                 <a href="#infoB22-5" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('46', 'Bombus cullumanus', 'images/noImage.png')">
                     <h3>Bombus cullumanus</h3>
                     <p>
                         Ist wie die anderen Hummeln in dieser Artentabelle schwarz orange gefärbt. Um die Tabelle zu vereinfachen wird diese ausgestorbene Art jedoch nicht berücksichtigt. D (Norden); ausgestorben
@@ -1384,7 +1384,7 @@
 
 <div data-role="page" id="infoB22-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/10.png" />
@@ -1399,7 +1399,7 @@
 
 <div data-role="page" id="infoB22-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/8.png" />
@@ -1412,7 +1412,7 @@
 
 <div data-role="page" id="infoB22-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/7.png" />
@@ -1423,7 +1423,7 @@
 
 <div data-role="page" id="infoB22-4">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/8.png" />
@@ -1434,7 +1434,7 @@
 
 <div data-role="page" id="infoB22-5">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/8.png" />
@@ -1445,13 +1445,13 @@
 
 <!--Artentabelle B23-->
 <div data-role="page" id="ArtentabelleB23">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('47', 'Dunkle Erdhummel - Bombus terrestris', 'images/hummel/b23-1.png')">
                     <img src="images/hummel/b23-1.png" width="100px" />
                     <h3>Dunkle Erdhummel - Bombus terrestris</h3>
                     <p>
@@ -1465,7 +1465,7 @@
                 </p>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('48', 'Helle Erdhummel - Bombus lucorum', 'images/hummel/b23-2.png')">
                     <img src="images/hummel/b23-2.png" width="100px" />
                     <h3>Helle Erdhummel - Bombus lucorum</h3>
                     <p>
@@ -1474,7 +1474,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('49', 'Bombus cryptarum', 'images/hummel/b23-2.png')">
                     <img src="images/hummel/b23-2.png" width="100px" />
                     <h3>Bombus cryptarum</h3>
                     <p>
@@ -1483,7 +1483,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('50', 'Bombus magnus', 'images/hummel/b23-2.png')">
                     <img src="images/hummel/b23-2.png" width="100px" />
                     <h3>Bombus magnus</h3>
                     <p>
@@ -1497,13 +1497,13 @@
 
 <!--Artentabelle B24-->
 <div data-role="page" id="ArtentabelleB24">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('51', 'Pyrenäenhummel - Bombus pyrenaeus', 'images/hummel/b24-1.png')">
                     <img src="images/hummel/b24-1.png" width="100px" />
                     <h3>Pyrenäenhummel - Bombus pyrenaeus</h3>
                     <p>
@@ -1512,7 +1512,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('52', 'Höhenhummel - Bombus sichelii', 'images/hummel/b24-2.png')">
                     <img src="images/hummel/b24-2.png" width="100px" />
                     <h3>Höhenhummel - Bombus sichelii</h3>
                     <p>
@@ -1526,7 +1526,7 @@
 
 <!--Schlüssel C1-->
 <div data-role="page" id="NeueHummelBestimmenC">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -1565,7 +1565,7 @@
 
 <!--Schlüssel C2-->
 <div data-role="page" id="NeueHummelBestimmenC2">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -1590,7 +1590,7 @@
 
 <!--Schlüssel C3-->
 <div data-role="page" id="NeueHummelBestimmenC3">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -1615,7 +1615,7 @@
 
 <!--Schlüssel C4-->
 <div data-role="page" id="NeueHummelBestimmenC4">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -1647,7 +1647,7 @@
 
 <!--Schlüssel C5-->
 <div data-role="page" id="NeueHummelBestimmenC5">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -1672,13 +1672,13 @@
 
 <!--Artentabelle C6-->
 <div data-role="page" id="ArtentabelleC6">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('53', 'Wiesenhummel - Bombus pratorum', 'images/hummel/c6-1.png')">
                     <img src="images/hummel/c6-1.png" width="100px" />
                     <h3>Wiesenhummel - Bombus pratorum</h3>
                     <p>
@@ -1688,7 +1688,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('54', 'Waldhummel - Bombus sylvarum', 'images/hummel/c6-2.png')">
                     <img src="images/hummel/c6-2.png" width="100px" />
                     <h3>Waldhummel - Bombus sylvarum</h3>
                     <p>
@@ -1698,7 +1698,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('55', 'Pyrenäenhummel - Bombus pyrenaeus', 'images/hummel/c6-3.png')">
                     <img src="images/hummel/c6-3.png" width="100px" />
                     <h3>Pyrenäenhummel - Bombus pyrenaeus</h3>
                     <p>
@@ -1708,7 +1708,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('56', 'Höhenhummel - Bombus sichelii', 'images/hummel/c6-4.png')">
                     <img src="images/hummel/c6-4.png" width="100px" />
                     <h3>Höhenhummel - Bombus sichelii</h3>
                     <p>
@@ -1718,7 +1718,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('57', 'Trughummel - Bombus mendax', 'images/hummel/c6-5.png')">
                     <img src="images/hummel/c6-5.png" width="100px" />
                     <h3>Trughummel - Bombus mendax</h3>
                     <p>
@@ -1728,7 +1728,7 @@
                 <a href="#infoC6-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('58', 'Berglandhummel - Bombus monticola', 'images/hummel/c6-6.png')">
                     <img src="images/hummel/c6-6.png" width="100px" />
                     <h3>Berglandhummel - Bombus monticola</h3>
                     <p>
@@ -1738,7 +1738,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('59', 'Bombus inexspectatus', 'images/hummel/c6-7.png')">
                     <img src="images/hummel/c6-7.png" width="100px" />
                     <h3>Bombus inexspectatus</h3>
                     <p>
@@ -1748,7 +1748,7 @@
                 <a href="#infoC6-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('60', 'Bombus cullumanus', 'images/noImage.png')">
                     <h3>Bombus cullumanus</h3>
                     <p>
                         Ist ähnlich wie die anderen Hummeln in dieser Artentabelle gefärbt. Um die Tabelle zu vereinfachen wird diese ausgestorbene Art jedoch nicht berücksichtigt. D (Norden); ausgestorben
@@ -1761,7 +1761,7 @@
 
 <div data-role="page" id="infoC6-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/25.png" />
@@ -1770,7 +1770,7 @@
 
 <div data-role="page" id="infoC6-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/26.png" />
@@ -1779,13 +1779,13 @@
 
 <!--Artentabelle C7-->
 <div data-role="page" id="ArtentabelleC7">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('61', 'Helle Erdhummel - Bombus lucorum', 'images/hummel/c7-1.png')">
                     <img src="images/hummel/c7-1.png" width="100px" />
                     <h3>Helle Erdhummel - Bombus lucorum</h3>
                     <p>
@@ -1794,7 +1794,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('62', 'Bombus magnus', 'images/hummel/c7-2.png')">
                     <img src="images/hummel/c7-2.png" width="100px" />
                     <h3>Bombus magnus</h3>
                     <p>
@@ -1803,7 +1803,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('63', 'Bombus jonellus', 'images/hummel/c7-3.png')">
                     <img src="images/hummel/c7-3.png" width="100px" />
                     <h3>Bombus jonellus</h3>
                     <p>
@@ -1812,7 +1812,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('64', 'Bombus semenoviellus', 'images/hummel/c7-4.png')">
                     <img src="images/hummel/c7-4.png" width="100px" />
                     <h3>Bombus semenoviellus</h3>
                     <p>
@@ -1826,13 +1826,13 @@
 
 <!--Artentabelle C8-->
 <div data-role="page" id="ArtentabelleC8">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('65', 'Steinhummel - Bombus lapidarius', 'images/hummel/c8-1.png')">
                     <img src="images/hummel/c8-1.png" width="100px" />
                     <h3>Steinhummel - Bombus lapidarius</h3>
                     <p>
@@ -1841,7 +1841,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('66', 'Wiesenhummel - Bombus pratorum', 'images/hummel/c8-2.png')">
                     <img src="images/hummel/c8-2.png" width="100px" />
                     <h3>Wiesenhummel - Bombus pratorum</h3>
                     <p>
@@ -1855,13 +1855,13 @@
 
 <!--Artentabelle C9-->
 <div data-role="page" id="ArtentabelleC9">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('67', 'Bombus haematurus', 'images/hummel/c9-1.png')">
                     <img src="images/hummel/c9-1.png" width="100px" />
                     <h3>Bombus haematurus</h3>
                     <p>
@@ -1875,13 +1875,13 @@
 
 <!--Artentabelle C10-->
 <div data-role="page" id="ArtentabelleC10">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('68', 'Bombus fragrans', 'images/hummel/c10-1.png')">
                     <img src="images/hummel/c10-1.png" width="100px" />
                     <h3>Bombus fragrans</h3>
                     <p>
@@ -1891,7 +1891,7 @@
                 <a href="#infoC10-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('69', 'Bombus laesus', 'images/hummel/c10-2.png')">
                     <img src="images/hummel/c10-2.png" width="100px" />
                     <h3>Bombus laesus</h3>
                     <p>
@@ -1901,7 +1901,7 @@
                 <a href="#infoC10-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('70', 'Bombus distinguendus', 'images/hummel/c10-3.png')">
                     <img src="images/hummel/c10-3.png" width="100px" />
                     <h3>Bombus distinguendus</h3>
                     <p>
@@ -1916,7 +1916,7 @@
 
 <div data-role="page" id="infoC10-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/27.png" />
@@ -1925,7 +1925,7 @@
 
 <div data-role="page" id="infoC10-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/28.png" />
@@ -1934,7 +1934,7 @@
 
 <div data-role="page" id="infoC10-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/35.png" />
@@ -1943,13 +1943,13 @@
 
 <!--Artentabelle C11-->
 <div data-role="page" id="ArtentabelleC11">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('71', 'Grauweiße Hummel - Bombus mucidus', 'images/hummel/c11-1.png')">
                     <img src="images/hummel/c11-1.png" width="100px" />
                     <h3>Grauweiße Hummel - Bombus mucidus</h3>
                     <p>
@@ -1959,7 +1959,7 @@
                 <a href="#infoC11-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('72', 'Bombus veteranus', 'images/hummel/c11-2.png')">
                     <img src="images/hummel/c11-2.png" width="100px" />
                     <h3>Bombus veteranus</h3>
                     <p>
@@ -1969,7 +1969,7 @@
                 <a href="#infoC11-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('73', 'Bombus subterraneus', 'images/hummel/c11-3.png')">
                     <img src="images/hummel/c11-3.png" width="100px" />
                     <h3>Bombus subterraneus</h3>
                     <p>
@@ -1984,7 +1984,7 @@
 
 <div data-role="page" id="infoC11-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/27.png" />
@@ -1993,7 +1993,7 @@
 
 <div data-role="page" id="infoC11-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/28.png" />
@@ -2002,7 +2002,7 @@
 
 <div data-role="page" id="infoC11-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/35.png" />
@@ -2011,13 +2011,13 @@
 
 <!--Artentabelle C12-->
 <div data-role="page" id="ArtentabelleC12">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('74', 'Steinhummel - Bombus lapidarius', 'images/hummel/c12-1.png')">
                     <img src="images/hummel/c12-1.png" width="100px" />
                     <h3>Steinhummel - Bombus lapidarius</h3>
                     <p>
@@ -2026,7 +2026,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('75', 'Wiesenhummel - Bombus pratorum', 'images/hummel/c12-2.png')">
                     <img src="images/hummel/c12-2.png" width="100px" />
                     <h3>Wiesenhummel - Bombus pratorum</h3>
                     <p>
@@ -2040,13 +2040,13 @@
 
 <!--Artentabelle C13-->
 <div data-role="page" id="ArtentabelleC13">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('76', 'Ackerhummel - Bombus pascuorum', 'images/hummel/c13-1.png')">
                     <img src="images/hummel/c13-1.png" width="100px" />
                     <h3>Ackerhummel - Bombus pascuorum</h3>
                     <p>
@@ -2055,7 +2055,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('77', 'Veränderliche Hummel - Bombus humilis', 'images/hummel/c13-2.png')">
                     <img src="images/hummel/c13-2.png" width="100px" />
                     <h3>Veränderliche Hummel - Bombus humilis</h3>
                     <p>
@@ -2064,7 +2064,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('78', 'Bombus muscorum', 'images/hummel/c13-3.png')">
                     <img src="images/hummel/c13-3.png" width="100px" />
                     <h3>Bombus muscorum</h3>
                     <p>
@@ -2078,13 +2078,13 @@
 
 <!--Artentabelle C14-->
 <div data-role="page" id="ArtentabelleC14">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('79', 'Bergwaldhummel - Bombus wurflenii', 'images/hummel/c14-1.png')">
                     <img src="images/hummel/c14-1.png" width="100px" />
                     <h3>Bergwaldhummel - Bombus wurflenii</h3>
                     <p>
@@ -2093,7 +2093,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('80', 'Berglandhummel - Bombus monticola', 'images/hummel/c14-2.png')">
                     <img src="images/hummel/c14-2.png" width="100px" />
                     <h3>Berglandhummel - Bombus monticola</h3>
                     <p>
@@ -2107,13 +2107,13 @@
 
 <!--Artentabelle D1-->
 <div data-role="page" id="ArtentabelleD">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('81', 'Baumhummel - Bombus hypnorum', 'images/hummel/d1-1.png')">
                     <img src="images/hummel/d1-1.png" width="100px" />
                     <h3>Baumhummel - Bombus hypnorum</h3>
                     <p>
@@ -2127,7 +2127,7 @@
 
 <!--Schlüssel E1-->
 <div data-role="page" id="NeueHummelBestimmenE">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2166,7 +2166,7 @@
 
 <!--Schlüssel E2-->
 <div data-role="page" id="NeueHummelBestimmenE2">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2198,7 +2198,7 @@
 
 <!--Schlüssel E3-->
 <div data-role="page" id="NeueHummelBestimmenE3">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2223,7 +2223,7 @@
 
 <div data-role="page" id="infoE3-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/29.png" />
@@ -2232,7 +2232,7 @@
 
 <div data-role="page" id="infoE3-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/30.png" />
@@ -2241,7 +2241,7 @@
 
 <!--Schlüssel E4-->
 <div data-role="page" id="NeueHummelBestimmenE4">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2264,7 +2264,7 @@
 
 <div data-role="page" id="infoE4-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
         <img class="dialog" src="images/hummel/abb/17.png" />
@@ -2275,10 +2275,10 @@
 
 <div data-role="page" id="infoE4-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/16.png" />
+        <img class="dialog" src="images/hummel/abb/16.png" />
         <hr />
         <img class="dialog" src="images/hummel/abb/29.png" />
     </div>
@@ -2286,7 +2286,7 @@
 
 <!--Schlüssel E5-->
 <div data-role="page" id="NeueHummelBestimmenE5">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2313,25 +2313,25 @@
 
 <div data-role="page" id="infoE5-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/33.png" />
+        <img class="dialog" src="images/hummel/abb/33.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE5-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/34.png" />
+        <img class="dialog" src="images/hummel/abb/34.png" />
     </div>
 </div>
 
 <!--Schlüssel E6-->
 <div data-role="page" id="NeueHummelBestimmenE6">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2363,7 +2363,7 @@
 
 <!--Schlüssel E7-->
 <div data-role="page" id="NeueHummelBestimmenE7">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Neue Hummel identifizieren</h1>
     </div>
     <div data-role="content">
@@ -2386,36 +2386,36 @@
 
 <div data-role="page" id="infoE7-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/30.png" />
+        <img class="dialog" src="images/hummel/abb/30.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE7-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/29.png" />
+        <img class="dialog" src="images/hummel/abb/29.png" />
     </div>
 </div>
 
 <!--Artentabelle E8-->
 <div data-role="page" id="ArtentabelleE8">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
-           <li>
-               <p>
-                   Die folgenden Arten sind im Freiland nicht sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden Arten sind im Freiland nicht sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('82', 'Bombus (Psithyrus) norvegicus', 'images/hummel/e8-1.png')">
                     <img src="images/hummel/e8-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) norvegicus</h3>
                     <p>
@@ -2425,7 +2425,7 @@
                 <a href="#infoE8-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('83', 'Bombus (Psithyrus) sylvestris', 'images/hummel/e8-1.png')">
                     <img src="images/hummel/e8-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) sylvestris</h3>
                     <p>
@@ -2435,7 +2435,7 @@
                 <a href="#infoE8-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('84', 'Bombus (Psithyrus) flavidus', 'images/hummel/e8-1.png')">
                     <img src="images/hummel/e8-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) flavidus</h3>
                     <p>
@@ -2450,31 +2450,31 @@
 
 <div data-role="page" id="infoE8-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/31.png" />
+        <img class="dialog" src="images/hummel/abb/31.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE8-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/32.png" />
+        <img class="dialog" src="images/hummel/abb/32.png" />
     </div>
 </div>
 
 <!--Artentabelle E9-->
 <div data-role="page" id="ArtentabelleE9">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('85', 'Distelhummel - Bombus soroeensis', 'images/hummel/e9-1.png')">
                     <img src="images/hummel/e9-1.png" width="100px" />
                     <h3>Distelhummel - Bombus soroeensis</h3>
                     <p>
@@ -2484,7 +2484,7 @@
                 <a href="#infoE9-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('86', 'Bombus confusus', 'images/hummel/e9-2.png')">
                     <img src="images/hummel/e9-2.png" width="100px" />
                     <h3>Bombus confusus</h3>
                     <p>
@@ -2494,7 +2494,7 @@
                 <a href="#infoE9-2" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('87', 'Bombus ruderarius', 'images/hummel/e9-3.png')">
                     <img src="images/hummel/e9-3.png" width="100px" />
                     <h3>Bombus ruderarius</h3>
                     <p>
@@ -2509,45 +2509,45 @@
 
 <div data-role="page" id="infoE9-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/25.png" />
+        <img class="dialog" src="images/hummel/abb/25.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE9-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/26.png" />
+        <img class="dialog" src="images/hummel/abb/26.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE9-3">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/25.png" />
+        <img class="dialog" src="images/hummel/abb/25.png" />
     </div>
 </div>
 
 <!--Artentabelle E10-->
 <div data-role="page" id="ArtentabelleE10">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
-           <li>
-               <p>
-                   Die folgenden Arten sind im Freiland nicht immer sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden Arten sind im Freiland nicht immer sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('88', 'Vestalis-Kuckuckshummel - Bombus (Psithyrus) vestalis', 'images/hummel/e10-1.png')">
                     <img src="images/hummel/e10-1.png" width="100px" />
                     <h3>Vestalis-Kuckuckshummel - Bombus (Psithyrus) vestalis</h3>
                     <p>
@@ -2557,7 +2557,7 @@
                 <a href="#infoE10-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('89', 'Böhmische Kuckuckshummel - Bombus (Psithyrus) bohemicus', 'images/hummel/e10-2.png')">
                     <img src="images/hummel/e10-2.png" width="100px" />
                     <h3>Böhmische Kuckuckshummel - Bombus (Psithyrus) bohemicus</h3>
                     <p>
@@ -2572,36 +2572,36 @@
 
 <div data-role="page" id="infoE10-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/35.png" />
+        <img class="dialog" src="images/hummel/abb/35.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE10-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/36.png" />
+        <img class="dialog" src="images/hummel/abb/36.png" />
     </div>
 </div>
 
 <!--Artentabelle E11-->
 <div data-role="page" id="ArtentabelleE11">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
-           <li>
-               <p>
-                   Die folgenden Arten sind im Freiland nicht sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden Arten sind im Freiland nicht sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('90', 'Bombus (Psithyrus) barbutellus', 'images/hummel/e11-1.png')">
                     <img src="images/hummel/e11-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) barbutellus</h3>
                     <p>
@@ -2610,7 +2610,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('91', 'Bombus (Psithyrus) maxillosus', 'images/hummel/e11-1.png')">
                     <img src="images/hummel/e11-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) maxillosus</h3>
                     <p>
@@ -2624,13 +2624,13 @@
 
 <!--Artentabelle E12-->
 <div data-role="page" id="ArtentabelleE12">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('92', 'Grauweiße Hummel - Bombus mucidus', 'images/hummel/e12-1.png')">
                     <img src="images/hummel/e12-1.png" width="100px" />
                     <h3>Grauweiße Hummel - Bombus mucidus</h3>
                     <p>
@@ -2640,7 +2640,7 @@
                 <a href="#infoE12-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('93', 'Bombus (Psithyrus) campestris', 'images/hummel/e12-2.png')">
                     <img src="images/hummel/e12-2.png" width="100px" />
                     <h3>Bombus (Psithyrus) campestris</h3>
                     <p>
@@ -2655,35 +2655,35 @@
 
 <div data-role="page" id="infoE12-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/16.png" />
-       <hr />
-       <img class="dialog" src="images/hummel/abb/29.png" />
+        <img class="dialog" src="images/hummel/abb/16.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/29.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE12-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/17.png" />
-       <hr />
-       <img class="dialog" src="images/hummel/abb/30.png" />
+        <img class="dialog" src="images/hummel/abb/17.png" />
+        <hr />
+        <img class="dialog" src="images/hummel/abb/30.png" />
     </div>
 </div>
 
 <!--Artentabelle E13-->
 <div data-role="page" id="ArtentabelleE13">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('94', 'Bombus argillaceus', 'images/hummel/e13-1.png')">
                     <img src="images/hummel/e13-1.png" width="100px" />
                     <h3>Bombus argillaceus</h3>
                     <p>
@@ -2697,7 +2697,7 @@
                 </p>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('95', 'Gartenhummel - Bombus hortorum', 'images/hummel/e13-2.png')">
                     <img src="images/hummel/e13-2.png" width="100px" />
                     <h3>Gartenhummel - Bombus hortorum</h3>
                     <p>
@@ -2706,7 +2706,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('96', 'Bombus ruderatus', 'images/hummel/e13-3.png')">
                     <img src="images/hummel/e13-3.png" width="100px" />
                     <h3>Bombus ruderatus</h3>
                     <p>
@@ -2720,13 +2720,13 @@
 
 <!--Artentabelle E14-->
 <div data-role="page" id="ArtentabelleE14">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('97', 'Bombus pomorum', 'images/hummel/e14-1.png')">
                     <img src="images/hummel/e14-1.png" width="100px" />
                     <h3>Bombus pomorum</h3>
                     <p>
@@ -2735,7 +2735,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('98', 'Bombus ruderarius', 'images/hummel/e14-2.png')">
                     <img src="images/hummel/e14-2.png" width="100px" />
                     <h3>Bombus ruderarius</h3>
                     <p>
@@ -2749,13 +2749,13 @@
 
 <!--Artentabelle E15-->
 <div data-role="page" id="ArtentabelleE15">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('99', 'Dunkle Erdhummel - Bombus terrestris', 'images/hummel/e15-1.png')">
                     <img src="images/hummel/e15-1.png" width="100px" />
                     <h3>Dunkle Erdhummel - Bombus terrestris</h3>
                     <p>
@@ -2764,7 +2764,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('100', 'Bombus cryptarum', 'images/hummel/e15-2.png')">
                     <img src="images/hummel/e15-2.png" width="100px" />
                     <h3>Bombus cryptarum</h3>
                     <p>
@@ -2778,13 +2778,13 @@
 
 <!--Artentabelle E16-->
 <div data-role="page" id="ArtentabelleE16">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('101', 'Bombus gerstaeckeri', 'images/hummel/e16-1.png')">
                     <img src="images/hummel/e16-1.png" width="100px" />
                     <h3>Bombus gerstaeckeri</h3>
                     <p>
@@ -2798,18 +2798,18 @@
 
 <!--Artentabelle E17-->
 <div data-role="page" id="ArtentabelleE17">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
-           <li>
-               <p>
-                   Die folgenden beiden Arten sind im Gebirge nicht sicher unterscheidbar!
-               </p>
-           </li>
             <li>
-                <a href="#unbestimmt">
+                <p>
+                    Die folgenden beiden Arten sind im Gebirge nicht sicher unterscheidbar!
+                </p>
+            </li>
+            <li>
+                <a href="#unbestimmt" ng-click="add('102', 'Felsen-Kuckuckshummel - Bombus (Psithyrus) rupestris', 'images/hummel/e17-1.png')">
                     <img src="images/hummel/e17-1.png" width="100px" />
                     <h3>Felsen-Kuckuckshummel - Bombus (Psithyrus) rupestris</h3>
                     <p>
@@ -2818,7 +2818,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('103', 'Bombus (Psithyrus) quadricolor', 'images/hummel/e17-2.png')">
                     <img src="images/hummel/e17-2.png" width="100px" />
                     <h3>Bombus (Psithyrus) quadricolor</h3>
                     <p>
@@ -2833,13 +2833,13 @@
 
 <!--Artentabelle E18-->
 <div data-role="page" id="ArtentabelleE18">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('104', 'Bombus mesomelas', 'images/hummel/e18-1.png')">
                     <img src="images/hummel/e18-1.png" width="100px" />
                     <h3>Bombus mesomelas</h3>
                     <p>
@@ -2848,7 +2848,7 @@
                 </a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('105', 'Bombus armeniacus', 'images/hummel/e18-2.png')">
                     <img src="images/hummel/e18-2.png" width="100px" />
                     <h3>Bombus armeniacus</h3>
                     <p>
@@ -2862,13 +2862,14 @@
 
 <!--Artentabelle E19-->
 <div data-role="page" id="ArtentabelleE19">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+       <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="info">
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('106', 'Distelhummel - Bombus soroeensis', 'images/hummel/e19-1.png')">
                     <img src="images/hummel/e19-1.png" width="100px" />
                     <h3>Distelhummel - Bombus soroeensis</h3>
                     <p>
@@ -2878,7 +2879,7 @@
                 <a href="#infoE19-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('107', 'Bombus alpinus', 'images/hummel/e19-2.png')">
                     <img src="images/hummel/e19-2.png" width="100px" />
                     <h3>Bombus alpinus</h3>
                     <p>
@@ -2888,7 +2889,7 @@
                 <a href="#infoE19-1" data-rel="dialog"></a>
             </li>
             <li>
-                <a href="#unbestimmt">
+                <a href="#unbestimmt" ng-click="add('108', 'Bombus confusus', 'images/hummel/e19-3.png')">
                     <img src="images/hummel/e19-3.png" width="100px" />
                     <h3>Bombus confusus</h3>
                     <p>
@@ -2903,32 +2904,34 @@
 
 <div data-role="page" id="infoE19-1">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/25.png" />
+        <img class="dialog" src="images/hummel/abb/25.png" />
     </div>
 </div>
 
 <div data-role="page" id="infoE19-2">
     <div data-role="header" data-add-back-btn="true">
-    <h1></h1>
+        <h1></h1>
     </div>
     <div data-role="content">
-       <img class="dialog" src="images/hummel/abb/26.png" />
+        <img class="dialog" src="images/hummel/abb/26.png" />
     </div>
 </div>
 
 <!--Tab Identifizierte Hummeln-->
 <div data-role="page" id="IdentifizierteHummeln">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+        <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Identifizierte Hummeln</h1>
+        <a ng-click="clearAll()">Clear all</a>
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="delete">
             <li ng-repeat="hummel in hummeln">
                 <a href="#">
-                   <img src="{{hummel.picPath}}" width="100px" />
+                    <img src="{{hummel.picPath}}" width="100px" />
                     <h3>{{hummel.name}}</h3>
                     <p>Longitude: {{hummel.longitude}}</p>
                     <p>Latitude: {{hummel.latitude}}</p>
@@ -2942,7 +2945,7 @@
 
 <!--Tab Allgemeines über Hummeln-->
 <div data-role="page" id="AllgemeinesUeberHummeln">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Allgemeines über Hummeln</h1>
     </div>
     <div data-role="content">
@@ -2958,7 +2961,7 @@
                 Ein im Allgemeinen gut erkennbares Merkmal ist das Vorhandensein der Corbicula (Abb. 5) auf der Tibia (Abb. 4) der Hinterbeine. Da diese Einrichtung zum Sammeln und Trans- portieren von Pollen dient, ist sie jedoch nur bei Arbeiterinnen und Königinnen vorhanden – bei Weibchen der sozialparasitären Untergattung Psithyrus (Abb. 6) und allen Drohnen (Abb. 29, 30) fehlt dieser Sammelapparat.
             </p>
             <div>
-                <img width="95%" height="auto" align="center" src="images/edit/01_KöperEinerArbeiterinInRückenansicht.png" />
+                <img width="95%" height="auto" align="center" src="images/edit/01_KoerperEinerArbeiterinInRueckenansicht.png" />
                 <img width="95%" height="auto" align="center" src="images/edit/02_VorderansichtEinesKopfes.png" />
                 <img width="95%" height="auto" align="center" src="images/edit/03_linkerVorderflügel.png" />
                 <img width="95%" height="auto" align="center" src="images/edit/04_GliederungEinesMittelbeines.png" />
@@ -2973,7 +2976,7 @@
 
 <!--Tab Funktionsweise der App-->
 <div data-role="page" id="FunktionsweiseDerApp">
-    <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Funktionsweise der App</h1>
     </div>
     <div data-role="content">
