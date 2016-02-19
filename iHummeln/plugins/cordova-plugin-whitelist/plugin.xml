@@ -44,11 +44,6 @@
             <runs />
         </js-module>
     </platform>
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> iHummeln/master
 	<info>
 This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
 	</info>

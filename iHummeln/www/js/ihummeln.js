@@ -46,8 +46,8 @@ iHummelControllers.controller('mainController', ['$scope', '$localStorage',
 
             $localStorage.hummeln = hummelnNew;
             $localStorage.idCount++;
-            window.location = '/';
             location.reload();
+            window.location = '/';
         };
 
         $scope.clearAll = function (){
