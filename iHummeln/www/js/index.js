@@ -28,7 +28,7 @@ var app = {
     bindEvents: function () {
         //        document.addEventListener('deviceready', this.onDeviceReady, false);
         document.addEventListener('deviceready', function () {
-            StatusBar.overlaysWebView(false);
+            initStatusbarIos();
         }, false);
     },
     // deviceready Event Handler
@@ -51,3 +51,9 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function initStatusbarIos() {
+    StatusBar.overlaysWebView(false);
+    StatusBar.backgroundColorByHexString("#FFCC33");
+    StatusBar.styleDefault();
+}
