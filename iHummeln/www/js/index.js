@@ -1,21 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 var app = {
     // Application Constructor
     initialize: function () {
@@ -28,6 +10,18 @@ var app = {
     bindEvents: function () {
         //        document.addEventListener('deviceready', this.onDeviceReady, false);
         document.addEventListener('deviceready', function () {
+            ThreeDeeTouch.onHomeIconPressed = function (payload) {
+                console.log("Icon pressed. Type: " + payload.type + ". Title: " + payload.title + ".");
+                if (payload.type == 'add') {
+                    window.location.href = '#NeueHummelBestimmen';
+                } else if (payload.type == 'see') {
+                    window.location.href = '#IdentifizierteHummeln';
+                } else if (payload.type == 'upload') {
+                } else {
+                    // hook up any other icons you may have and do something awesome (e.g. launch the Camera UI, then share the image to Twitter)
+                    console.log(JSON.stringify(payload));
+                }
+            }
             initStatusbarIos();
         }, false);
     },
@@ -51,6 +45,33 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function initStatusbarIos() {
+    StatusBar.overlaysWebView(false);
+    StatusBar.backgroundColorByHexString("#FFCC33");
+    StatusBar.styleDefault();
+}
+
+function configureQuickActions() {
+    ThreeDeeTouch.configureQuickActions([
+                {
+                    type: 'add', // optional, but can be used in the onHomeIconPressed callback
+                    title: 'Hummel bestimmen', // mandatory
+                    iconType: 'Add' // optional
+    },
+                {
+                    type: 'see',
+                    title: 'Bestimmte Hummeln',
+                    iconType: 'Bookmark'
+    },
+                {
+                    type: 'upload',
+                    title: 'Hummeln upload',
+                    //        subtitle: 'Share like you care',
+                    iconType: 'Share'
+    }
+  ]);
+}
 
 function initStatusbarIos() {
     StatusBar.overlaysWebView(false);

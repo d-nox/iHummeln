@@ -7,10 +7,16 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-3dtouch": {
+            "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
+        },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
         },
         "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
         },
         "cordova-plugin-statusbar": {
