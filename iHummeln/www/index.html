@@ -12,7 +12,9 @@
     <script src="js/angularjs/angular.js"></script>
     <script src="js/angularjs/ngStorage.js"></script>
     <script src="js/ihummeln.js"></script>
-
+    <script src="hummeln.json"></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/hummel.css" />
@@ -1702,7 +1704,7 @@
                     <img src="images/hummel/c6-3.png" width="100px" />
                     <h3>Pyrenäenhummel - Bombus pyrenaeus</h3>
                     <p>
-                        Orange Behaarung ab Hinterrand von T3. „Gesicht“ wenig kontrastreich gelb behaart – auch oberhalb der Antennenbasis +/- gelb. Augen normal groß, seitliche Ocelli mehr als doppelter Ocel- lusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]
+                        Orange Behaarung ab Hinterrand von T3. „Gesicht“ wenig kontrastreich gelb behaart – auch oberhalb der Antennenbasis +/- gelb. Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
                 <a href="#infoC6-1" data-rel="dialog"></a>
@@ -1722,7 +1724,7 @@
                     <img src="images/hummel/c6-5.png" width="100px" />
                     <h3>Trughummel - Bombus mendax</h3>
                     <p>
-                        Augen sehr groß, seitliche Ocelli daher nur einfachen Ocellus- durchmesser vom Augeninnenrand entfernt (Abb. 26). Verhal- tensmerkmal: sitzt auffällig auf Warten und verfolgt iegende Objekte. A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]
+                        Augen sehr groß, seitliche Ocelli daher nur einfachen Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 26). Verhaltensmerkmal: sitzt auffällig auf Warten und verfolgt iegende Objekte. A, CH, D [Krummholzstufe bis Schneestufe. Hochgebirge]
                     </p>
                 </a>
                 <a href="#infoC6-2" data-rel="dialog"></a>
@@ -1732,7 +1734,7 @@
                     <img src="images/hummel/c6-6.png" width="100px" />
                     <h3>Berglandhummel - Bombus monticola</h3>
                     <p>
-                        Metasoma ab T2 orange behaart. Hintere gelbe Mesosomabinde „v“-förmig. Augen normal groß, seitliche Ocelli mehr als doppelter Ocel- lusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]
+                        Metasoma ab T2 orange behaart. Hintere gelbe Mesosomabinde „v“-förmig. Augen normal groß, seitliche Ocelli mehr als doppelter Ocellusdurchmesser vom Augeninnenrand entfernt (Abb. 25). A, CH, D [Bergwaldstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
                 <a href="#infoC6-1" data-rel="dialog"></a>
@@ -2429,7 +2431,7 @@
                     <img src="images/hummel/e8-1.png" width="100px" />
                     <h3>Bombus (Psithyrus) sylvestris</h3>
                     <p>
-                        Scapus spärlich behaart (Abb. 32). Die letzten 8 Antennenglie- der ca. 1,5 mal so lang wie breit. Sternum 7 mit zwei Höckern. Wirte: B. pratorum (B. jonellus) A, CH, D; häufig [Bergwaldstufe bis Krummholzstufe. Lockere Baum- und Gehölzbestände]
+                        Scapus spärlich behaart (Abb. 32). Die letzten 8 Antennenglieder ca. 1,5 mal so lang wie breit. Sternum 7 mit zwei Höckern. Wirte: B. pratorum (B. jonellus) A, CH, D; häufig [Bergwaldstufe bis Krummholzstufe. Lockere Baum- und Gehölzbestände]
                     </p>
                 </a>
                 <a href="#infoE8-2" data-rel="dialog"></a>
@@ -2843,7 +2845,7 @@
                     <img src="images/hummel/e18-1.png" width="100px" />
                     <h3>Bombus mesomelas</h3>
                     <p>
-                        T1 strohgelb behaart – ab T2 dunkelgelb, wobei die Hinterrän- der aufgehellt sind. Behaarung mittellang. A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]
+                        T1 strohgelb behaart – ab T2 dunkelgelb, wobei die Hinterränder aufgehellt sind. Behaarung mittellang. A, CH, D [Krummholzstufe bis Alpinstufe. Hochgebirge]
                     </p>
                 </a>
             </li>
@@ -2863,7 +2865,7 @@
 <!--Artentabelle E19-->
 <div data-role="page" id="ArtentabelleE19">
     <div data-role="header" data-position="fixed">
-       <a data-icon="back" onclick="window.history.back();">Back</a>
+        <a data-icon="back" onclick="window.history.back();">Back</a>
         <h1>Artentabelle</h1>
     </div>
     <div data-role="content">
@@ -2929,11 +2931,11 @@
     </div>
     <div data-role="content">
         <ul data-role="listview" data-split-icon="delete">
-           <li>
-               <h3>Anzahl der identifizierten Hummeln: {{hummeln.length}}</h3>
-           </li>
-            <li ng-repeat="hummel in hummeln">
-                <a href="#">
+            <li>
+                <h3>Anzahl der identifizierten Hummeln: {{hummeln.length}}</h3>
+            </li>
+            <li ng-repeat="hummel in hummeln" ng-click="Deteilansicht(hummel)">
+                <a href="#DetailAnsicht">
                     <img src="{{hummel.picPath}}" width="100px" />
                     <h3>{{hummel.name}}</h3>
                     <p>Longitude: {{hummel.longitude}}</p>
@@ -2994,6 +2996,20 @@
             <p class="klein">Hier sehen Sie alle Hummeln, die Sie jemals mit iHummeln identifiziert haben. Um nähere Informationen und Charakteristika zu einer Hummelgattung zu erhalten, berühren Sie einfach die Hummel.</p>
             <h2>Allgemeines über Hummeln</h2>
             <p class="klein">Unter diesem Tab finden Sie allgemeine Informationen und Tipps bei der Bestimmung von Hummeln.</p>
+        </div>
+    </div>
+</div>
+
+<!--Tab Detailansicht-->
+<div data-role="page" id="DetailAnsicht">
+    <div data-role="header" data-position="fixed"> <a data-icon="back" onclick="window.history.back();">Back</a>
+        <h1>{{hummelName}}</h1>
+    </div>
+    <div data-role="content">
+        <div>
+            <img src={{picPath}} width="50%"/>
+            <p>{{beschreibung}}</p>
+            <div id="mapOSM" style="height:500px; width:95%;">Map comes here</div>
         </div>
     </div>
 </div>
