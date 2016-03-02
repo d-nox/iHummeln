@@ -69,8 +69,6 @@ iHummelControllers.controller('mainController', ['$scope', '$http',
                 } else {
                     navigator.notification.confirm(error.code + ' - ' + error.message, function () {}, ['Fehler'], ['Verstanden']);
                 }
-
-                //alert(error.code + " - " + error.message);
             }
         };
 
@@ -93,7 +91,7 @@ iHummelControllers.controller('mainController', ['$scope', '$http',
                 if (localStorage['lastupload'] < hummeln[i]['timestamp']) {
                     $http({
                         method: 'GET',
-                        url: 'http://plusrein.at/dev/iHummeln/?Id=' + hummeln[i]['hummelId'] + '&longitude=' + hummeln[i]['longitude'] + '&latitude=' + hummeln[i]['latitude'] + '&timestamp=' + hummeln[i]['timestamp']
+                        url: 'http://plusrein.at/dev/iHummeln/?hummelId=' + hummeln[i]['hummelId'] + '&longitude=' + hummeln[i]['longitude'] + '&latitude=' + hummeln[i]['latitude'] + '&timestamp=' + hummeln[i]['timestamp']
                     }).then(function successCallback(data) {
                         if (data['statusText'] === 'OK') {
                             localStorage['lastupload'] = hummeln[i - 1]['timestamp'];
@@ -115,21 +113,14 @@ iHummelControllers.controller('mainController', ['$scope', '$http',
             $scope.picPath = hummeln['Hummeln'][hummel['hummelId'] - 1].picPath;
             $scope.beschreibung = hummeln['Hummeln'][hummel['hummelId'] - 1].beschreibung;
             showOpenStreetMap(hummel['latitude'], hummel['longitude']);
-
         };
 
         function showOpenStreetMap(lat, lng) {
-            var mapHtml;
-            if ($('#mapOSM').text() === "Map comes here") {
-                mapHtml = $('#mapOSM');
-            }
             if (!OpenLayers) {
                 console.log('Openlaysers not supported!');
             }
             var map;
-            var markers;
             var zoom = 18;
-
             $('#mapOSM').text("");
             console.log(lng + " " + lat);
             map = new OpenLayers.Map("mapOSM");
@@ -138,6 +129,7 @@ iHummelControllers.controller('mainController', ['$scope', '$http',
             var toProjection = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
             var position = new OpenLayers.LonLat(lng, lat).transform(fromProjection, toProjection);
             map.addLayer(mapnik);
+            map.size.w = document.width*0.9;
             map.setCenter(position, zoom);
 
             var markers = new OpenLayers.Layer.Markers("Markers");
