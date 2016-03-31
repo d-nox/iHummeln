@@ -32,6 +32,7 @@
                 <li data-icon="bars"><a href="#IdentifizierteHummeln">Identifizerte Hummeln</a></li>
                 <li data-icon="info"><a href="#AllgemeinesUeberHummeln">Allgemeines über Hummeln</a></li>
                 <li data-icon="info"><a href="#FunktionsweiseDerApp">Funktionsweise der Bestimmungapp</a></li>
+                <!--<li data-icon="info" ng-click="getLocation();"><a href="#">Hummel upload</a></li>-->
             </ul>
         </div>
     </div>
@@ -2938,9 +2939,8 @@
                 <a href="#DetailAnsicht">
                     <img src="{{hummel.picPath}}" width="100px" />
                     <h3>{{hummel.name}}</h3>
-                    <p>Longitude: {{hummel.longitude}}</p>
-                    <p>Latitude: {{hummel.latitude}}</p>
-                    <p>Timestamp: {{hummel.timestamp}}</p>
+                    <p>Identifizierungs-Ort: {{hummel.locationString}}</p>
+                    <p ng-bind="convertTimestampToLocalDateTime(hummel.timestamp)"></p>
                 </a>
                 <a href="#" ng-click="delete(hummel.Id)"></a>
             </li>

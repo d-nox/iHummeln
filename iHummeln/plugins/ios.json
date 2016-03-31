@@ -27,6 +27,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "at.ddominkovic.auer.ihummeln"
         }
     },
     "dependent_plugins": {}

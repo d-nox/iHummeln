@@ -16,10 +16,6 @@ var app = {
                     window.location.href = '#NeueHummelBestimmen';
                 } else if (payload.type == 'see') {
                     window.location.href = '#IdentifizierteHummeln';
-                } else if (payload.type == 'upload') {
-                } else {
-                    // hook up any other icons you may have and do something awesome (e.g. launch the Camera UI, then share the image to Twitter)
-                    console.log(JSON.stringify(payload));
                 }
             }
             initStatusbarIos();
@@ -63,12 +59,6 @@ function configureQuickActions() {
                     type: 'see',
                     title: 'Bestimmte Hummeln',
                     iconType: 'Bookmark'
-    },
-                {
-                    type: 'upload',
-                    title: 'Hummeln upload',
-                    //        subtitle: 'Share like you care',
-                    iconType: 'Share'
     }
   ]);
 }
